@@ -2,6 +2,8 @@
 
 This is a repository for our great class
 
+I added this line directly on GitHub
+
 ## Tasks
 
 - [ ] find a better name for our class
