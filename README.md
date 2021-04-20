@@ -15,3 +15,5 @@ Add your name and your role (student) in the table below
 |name|role|
 |:---|:---|
 |Carlo Trimarchi|teacher|
+|
+|Gabri Ber|student|
