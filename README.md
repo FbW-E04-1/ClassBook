@@ -1,3 +1,3 @@
 # ClassBook
 
-This is a repository for our class
+This is a repository for our great class
