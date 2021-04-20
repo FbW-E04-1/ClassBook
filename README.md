@@ -11,4 +11,6 @@ This is a repository for our great class
 
 ## Participants
 
-Teacher: Carlo T.
+|name|role|
+|:---|:---|
+|Carlo Trimarchi|teacher|
