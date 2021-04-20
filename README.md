@@ -11,4 +11,4 @@ This is a repository for our great class
 
 ## Participants
 
-Teacher: Carlo
+Teacher: Carlo P.
