@@ -18,6 +18,7 @@ Add your name and your role (student) in the table below
 |Gabri Ber|student|
 |Mohammad Olfatee|student|
 |Emad Soltan| Student|
+|Patryk Lisowski| Student|
 |David Rabinovich| Student|
 |Muhanad Osman| Student|
 |Arta Nrecaj Dushi| Student|
