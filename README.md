@@ -11,6 +11,7 @@ This is a repository for our great class
 
 ## Participants
 
+Add your name and your role (student) in the table below
 |name|role|
 |:---|:---|
 |Carlo Trimarchi|teacher|
