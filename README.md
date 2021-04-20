@@ -2,6 +2,8 @@
 
 This is a repository for our great class
 
+some changes
+
 I added this line directly on GitHub
 
 ## Tasks
