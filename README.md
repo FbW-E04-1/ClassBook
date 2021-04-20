@@ -18,4 +18,4 @@ Add your name and your role (student) in the table below
 |Gabri Ber|student|
 |Mohammad Olfatee|student|
 |Emad Soltan| Student|
-
+|David Rabinovich| Student|
