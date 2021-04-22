@@ -25,3 +25,14 @@ Add your name, GitHub username with link, and role in the table below
 |Arta Nrecaj Dushi|| Student|
 |Andin Priscilla||Studnt
 |Hiwa Taheri||Student|
+
+## Course overview
+
+| module|dates|
+|:---|:---
+|BDL - Basic Digital Literacy| 1 April - 21 April|
+|UIB - User Interface Basics| 22 April - 30 June|
+|PB - Programming Basics| 1 July - 15 September|
+|SPA - Single Page Applications| 16 September - 23 November|
+|Backend| 24 November - 9 February |
+|Final Project| 10 February - 31 March |
