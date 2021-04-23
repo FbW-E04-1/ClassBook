@@ -11,6 +11,7 @@ This is a repository for our great class
 
 ## Participants
 
+
 Add your name, GitHub username with link, and role in the table below
 
 |name|GitHub|role|
@@ -18,13 +19,14 @@ Add your name, GitHub username with link, and role in the table below
 |Carlo Trimarchi|[carlotrimarchi](https://github.com/carlotrimarchi)|teacher|
 |Gabri Ber||student|
 |Mohammad Olfatee||student|
-|Emad Soltan|| Student|
-|Patryk Lisowski|| Student|
-|David Rabinovich|| Student|
-|Muhanad Osman|| Student|
-|Arta Nrecaj Dushi|| Student|
-|Andin Priscilla||Studnt
-|Hiwa Taheri||Student|
+|Emad Soltan|| student|
+|Patryk Lisowski|| student|
+|David Rabinovich|| student|
+|Muhanad Osman|| student|
+|Arta Nrecaj Dushi|| student|
+|Andin Priscilla||student|
+|Hiwa Taheri||student|
+|Omar Al-Ezzi|astronaut|
 
 ## Course overview
 
