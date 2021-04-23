@@ -26,7 +26,7 @@ Add your name, GitHub username with link, and role in the table below
 |Arta Nrecaj Dushi|| student|
 |Andin Priscilla||student|
 |Hiwa Taheri||student|
-|Omar Al-Ezzi|astronaut|
+|Omar Al-Ezzi||astronaut|
 
 ## Course overview
 
