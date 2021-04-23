@@ -20,7 +20,7 @@ Add your name, GitHub username with link, and role in the table below
 |Gabri Ber||student|
 |Mohammad Olfatee||student|
 |Emad Soltan|| student|
-|Patryk Lisowski|| student|
+|Patryk Lisowski|[viest1](https://github.com/viest1/)|student|
 |David Rabinovich|| student|
 |Muhanad Osman|| student|
 |Arta Nrecaj Dushi|| student|
