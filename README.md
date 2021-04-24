@@ -23,7 +23,7 @@ Add your name, GitHub username with link, and role in the table below
 |Patryk Lisowski|[viest1](https://github.com/viest1/)|student|
 |David Rabinovich|| student|
 |Muhanad Osman|| student|
-|Arta Nrecaj Dushi|| student|
+|Arta Nrecaj Dushi|[ArtaNdrecajDushi](https://github.com/ArtaNdrecajDushi)| student|
 |Andin Priscilla||student|
 |Hiwa Taheri|[hiwataheri](https://github.com/hiwataheri)|student|
 |Omar Al-Ezzi||astronaut|
