@@ -1,5 +1,7 @@
 # Web Developers Class Guide
 
+![image](https://www.papercitymag.com/wp-content/uploads/2016/04/image-c86178bc.jpg)
+
 This is a repository for our great class
 
 ## Tasks
