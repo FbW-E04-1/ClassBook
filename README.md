@@ -25,7 +25,7 @@ Add your name, GitHub username with link, and role in the table below
 |Muhanad Osman|| student|
 |Arta Nrecaj Dushi|| student|
 |Andin Priscilla||student|
-|Hiwa Taheri||student|
+|Hiwa Taheri|[hiwataheri](https://github.com/hiwataheri)|student|
 |Omar Al-Ezzi||astronaut|
 
 ## Course overview
