@@ -1,4 +1,4 @@
-# ClassBook
+# Web Developers Class Guide
 
 This is a repository for our great class
 
@@ -6,8 +6,8 @@ This is a repository for our great class
 
 - [X] find a better name for our class
 - [X] add picture for the class
-- [ ] create a table with all class members
-- [ ] add list of students to participants
+- [X] create a table with all class members
+- [X] add list of students to participants
 
 ## Participants
 
