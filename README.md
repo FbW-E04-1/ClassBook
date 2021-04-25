@@ -22,7 +22,7 @@ Add your name, GitHub username with link, and role in the table below
 |Emad Soltan|[emsoltan](https://github.com/emsoltan)| student|
 |Patryk Lisowski|[viest1](https://github.com/viest1/)|student|
 |David Rabinovich|| student|
-|Muhanad Osman|| student|
+|Muhanad Osman|[MuhanadOsman](https://github.com/MuhandOsman)| student|
 |Arta Nrecaj Dushi|[ArtaNdrecajDushi](https://github.com/ArtaNdrecajDushi)| student|
 |Andin Priscilla|[andinPriscilla](https://github.com/andinPriscilla)|student|
 |Hiwa Taheri|[hiwataheri](https://github.com/hiwataheri)|student|
