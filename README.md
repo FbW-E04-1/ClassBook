@@ -24,7 +24,7 @@ Add your name, GitHub username with link, and role in the table below
 |David Rabinovich|| student|
 |Muhanad Osman|| student|
 |Arta Nrecaj Dushi|[ArtaNdrecajDushi](https://github.com/ArtaNdrecajDushi)| student|
-|Andin Priscilla||student|
+|Andin Priscilla|andinPriscilla|student|
 |Hiwa Taheri|[hiwataheri](https://github.com/hiwataheri)|student|
 |Omar Al-Ezzi||astronaut|
 
