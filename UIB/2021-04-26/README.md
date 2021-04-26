@@ -1,23 +1,34 @@
-# 2021-04-20
+# 2021-04-26
 
 ## Topics
 
-- recap of terminal commands
-- navigating in the command line
-- recap of Git and GitHub workflow
-- pull requests and merge
+- introduction to HTML
+- anatomy of an HTML element 
+- nesting elements
+- empty elements (<img>, <br>)
+- recap: absolute and relative paths 
+- basic HTML tags
+- anatomy of an HTML tag
+- using MDN documentation
 
 ## Exercises
 
-[80s recipes](https://github.com/FbW-E04-1/80s-recipes)
+- [Make a Wikipedia page](https://github.com/FbW-E04-1/UIB-content-text-wikipedia)
+
+    Classroom: https://classroom.github.com/a/DOo5DSG7
+
+- [Basic portfolio navigation](https://github.com/FbW-E04-1/UIB-content-basic-portfolio-navigation)
+
+    Classroom: https://classroom.github.com/a/b0EtP7qx
+
+- 
 
 ## Resources
 
-- [Lesson video recording](https://drive.google.com/file/d/1wrobu3As_VSDFxOeTtV7EQq9Pw6gMaNU/view?usp=sharing)
-- [Pro Git](https://git-scm.com/book/en/v2)
-
-    Great book on Git available for free.  
-    I particularly recommend the Git Basics chapter and the chapter on Github.
-- [Git and GitHub for poets](https://www.youtube.com/watch?v=BCQHnlnPusY)
-
-    Great video series for better understanding Git and GitHub and how to use them.
+- [Live coded examples](html-basics)
+- [Lesson video recording](https://drive.google.com/file/d/16EHANKI0Kkq07Ds-RO-yxevgRfrNQZ9b/view?usp=sharing)
+- [Slides](../slides/UIB-basics-boilerplate.pdf)
+- [HTML basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
+- [What's in the head?](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
+- [head element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)
+- [Heading elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)
