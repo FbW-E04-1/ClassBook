@@ -5,7 +5,7 @@
 - introduction to HTML
 - anatomy of an HTML element 
 - nesting elements
-- empty elements (<img>, <br>)
+- empty elements (`<img>`, `<br>`, `<hr>`)
 - recap: absolute and relative paths 
 - basic HTML tags
 - anatomy of an HTML tag
@@ -20,8 +20,6 @@
 - [Basic portfolio navigation](https://github.com/FbW-E04-1/UIB-content-basic-portfolio-navigation)
 
     Classroom: https://classroom.github.com/a/b0EtP7qx
-
-- 
 
 ## Resources
 
