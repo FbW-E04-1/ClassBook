@@ -21,7 +21,7 @@ Add your name, GitHub username with link, and role in the table below
 |Mohammad Olfatee||student|
 |Emad Soltan|[emsoltan](https://github.com/emsoltan)| student|
 |Patryk Lisowski|[viest1](https://github.com/viest1/)|student|
-|David Rabinovich|| student|(https://github.com/kodamok)
+|David Rabinovich|[kodamok](https://github.com/kodamok)|student|
 |Muhanad Osman|[MuhanadOsman](https://github.com/MuhandOsman)| student|
 |Arta Nrecaj Dushi|[ArtaNdrecajDushi](https://github.com/ArtaNdrecajDushi)| student|
 |Andin Priscilla|[andinPriscilla](https://github.com/andinPriscilla)|student|
