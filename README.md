@@ -1,9 +1,8 @@
 # Web Developers Class Guide
 
-![image](https://www.papercitymag.com/wp-content/uploads/2016/04/image-c86178bc.jpg)
+![Dragonfly 2021-22](Logowithtext.png)
 
-This is a repository for our great class
-
+# Dragonfly 21-22 - Class Guide
 ## UIB questions / todos
 
 - [x] make different paragraphs of different colors
