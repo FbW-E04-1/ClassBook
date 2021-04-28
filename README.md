@@ -1,4 +1,4 @@
-# Web Developers Class Guide
+# Dragonfly Class 21-22 Class Guide
 
 ![Dragonfly 2021-22](Logowithtext.png)
 
