@@ -1,4 +1,6 @@
-# ClassBook
+# Web Developers Class Guide
+
+![image](https://www.papercitymag.com/wp-content/uploads/2016/04/image-c86178bc.jpg)
 
 This is a repository for our great class
 
@@ -6,7 +8,6 @@ This is a repository for our great class
 
 - [x] make different paragraphs of different colors
 - [ ] how to change the colors for links inside the list, but not other links
-
 - [ ] aligning ul list to the center (advanced)
 
 ## Participants
@@ -21,12 +22,13 @@ Add your name, GitHub username with link, and role in the table below
 |Mohammad Olfatee||student|
 |Emad Soltan|[emsoltan](https://github.com/emsoltan)| student|
 |Patryk Lisowski|[viest1](https://github.com/viest1/)|student|
-|David Rabinovich|| student|
+|David Rabinovich|[kodamok](https://github.com/kodamok)|student|
 |Muhanad Osman|[MuhanadOsman](https://github.com/MuhandOsman)| student|
 |Arta Nrecaj Dushi|[ArtaNdrecajDushi](https://github.com/ArtaNdrecajDushi)| student|
 |Andin Priscilla|[andinPriscilla](https://github.com/andinPriscilla)|student|
 |Hiwa Taheri|[hiwataheri](https://github.com/hiwataheri)|student|
 |Omar Al-Ezzi||astronaut|
+|Ufuk Yildiz|[ufukyildiz84](https://github.com/ufukyildiz84)|student|
 
 ## Course overview
 
