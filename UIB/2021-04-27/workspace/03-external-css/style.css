@@ -1,0 +1,64 @@
+/* Properties defined inside the body will be inherited by other elements */
+
+/* 
+    3 ways (for now) of selecting (targeting, matching) an HTML element:
+
+    - using the html element itself: h1, p, a, img
+    - using a class name: .class-name
+    - using an id: #id-name
+*/
+
+body {
+    /* background-color: limegreen; */
+    background-color: #0ddd6b; /* hexadecimal color notation */
+    font-family: fantasy;
+}
+
+h1 {
+  background-color: tomato;
+  color: white;
+  font-family: "Comic Sans MS";
+  text-align: center;
+}
+
+a {
+  color: black;
+  /* font-family: "Comic Sans MS"; */
+}
+
+p {
+  background-color: grey;
+  color: wheat;
+  text-align: left; /* left, right, center, justify */
+}
+
+ol {
+  background-color: lightgreen;
+}
+
+/* ul {
+  background-color: lightseagreen;
+  border-color: tomato;
+  border-style: double; /* solid, dotted, dashed, double 
+  border-width: 5px;
+} */
+
+.main-navigation {
+  background-color: lightseagreen;
+  border-color: tomato;
+  border-style: double;
+  border-width: 5px;
+}
+
+hr {
+    border-color: blue;
+}
+
+#page-title {
+    color: black;
+}
+
+/* This selects an element with a class attribute of introduction-text */
+.introduction-text {
+    background-color: black;
+}

@@ -2,12 +2,12 @@
 
 This is a repository for our great class
 
-## Tasks
+## UIB questions / todos
 
-- [X] find a better name for our class
-- [X] add picture for the class
-- [ ] create a table with all class members
-- [ ] add list of students to participants
+- [x] make different paragraphs of different colors
+- [ ] how to change the colors for links inside the list, but not other links
+
+- [ ] aligning ul list to the center (advanced)
 
 ## Participants
 

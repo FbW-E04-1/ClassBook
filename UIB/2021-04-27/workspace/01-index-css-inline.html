@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+      To write CSS inline we simply add a style attribute to a specific HTML element.
+      It's easy, but there are more cons than benefits:
+
+      1. lot of repetition is created
+      2. keeping styles consistent is really hard
+      3. to change a color or a property of multiple elements, one has to change  every single element
+      4. CSS harder to maintain
+      5. easier to make errors
+    -->
+
+    <!-- inline css -->
+    <h1 style="background-color: tomato; color: white;">TODO list</h1>
+    <ul style="color: green;">
+      <li><a style="color: green;" href="#">home</a></li>
+      <li><a style="color: green;" href="#">about</a></li>
+      <li><a style="color: green;" href="#">contact</a></li>
+      <li><a style="color: green;" href="#">work</a></li>
+    </ul>
+    <p style="color: tomato;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas pariatur
+      corrupti possimus. Eligendi animi inventore natus cum, nam omnis amet
+      dignissimos aperiam ipsam perferendis sed, beatae, cupiditate nesciunt
+      reiciendis expedita.
+    </p>
+
+    <a href="http://example.com" target="_blank">click here</a>
+    <img
+      height="100px"
+      src="http://placekitten.com/500/200"
+      alt="a picture of a cat"
+      title="cat"
+    />
+    <ul style="color: tomato;">
+      <li>recap basic HTML elements</li>
+      <li>introduce CSS</li>
+    </ul>
+
+    <ol style="color: tomato;" start="5">
+      <li>recap basic HTML elements</li>
+      <li>
+        introduce CSS
+        <ol>
+          <li>learn how to include a css file</li>
+        </ol>
+      </li>
+    </ol>
+  </body>
+</html>
