@@ -1,6 +1,6 @@
-# Web Developers Class Guide
+# Dragonfly 21-22 - Class Guide
 
-![image](https://www.papercitymag.com/wp-content/uploads/2016/04/image-c86178bc.jpg)
+![Logo](Logowithtext.png)
 
 This is a repository for our great class
 
@@ -11,7 +11,6 @@ This is a repository for our great class
 - [ ] aligning ul list to the center (advanced)
 
 ## Participants
-
 
 Add your name, GitHub username with link, and role in the table below
 
