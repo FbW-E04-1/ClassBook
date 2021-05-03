@@ -1,8 +1,9 @@
-# Dragonfly Class 21-22 Class Guide
+# Web Developers Class Guide
 
-![Dragonfly 2021-22](Logowithtext.png)
+![image](https://www.papercitymag.com/wp-content/uploads/2016/04/image-c86178bc.jpg)
 
-# Dragonfly 21-22 - Class Guide
+This is a repository for our great class
+
 ## UIB questions / todos
 
 - [x] make different paragraphs of different colors
@@ -17,9 +18,9 @@ Add your name, GitHub username with link, and role in the table below
 |name|GitHub|role|
 |:---|:---|:---|
 |Carlo Trimarchi|[carlotrimarchi](https://github.com/carlotrimarchi)|teacher|
+|Emad Soltan|[emsoltan](https://github.com/emsoltan)| representative |
 |Gabri Ber||student|
 |Mohammad Olfatee||student|
-|Emad Soltan|[emsoltan](https://github.com/emsoltan)| student|
 |Patryk Lisowski|[viest1](https://github.com/viest1/)|student|
 |David Rabinovich|[kodamok](https://github.com/kodamok)|student|
 |Muhanad Osman|[MuhanadOsman](https://github.com/MuhandOsman)| student|
