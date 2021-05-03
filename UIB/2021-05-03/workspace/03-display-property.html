@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /*
+      By default, HTML elements are block or inline elements.
+
+      Take a book as an example: 
+      - inline elements behave like words. You can have words next to each other and when there's not enough space, the words will just "wrap" to the next line.
+      - block elements are the paragraphs. One paragraph occupies the whole space available horizontally and only one paragraph can appear on the same line
+
+      In CSS, this behaviour is controlled by the display property
+
+      inline:
+      - you have control only over horizontal properties (margin-left, margin-right, padding-left, padding-right)
+      - you can't change directly width and height
+      wrap
+
+      block: paragraphs in a book, one per line
+
+      inline-block: a mix of inline and block
+      - inline-block elements can appear next to each other
+      - they are only as large as their content
+      - you can change their width and height
+      - you can contro
+        */
+      p {
+        margin-top: 32px;
+        /* width: 100px; */
+      }
+
+      span {
+        margin-top: 16px;
+      }
+
+      .boxes {
+          font-size: 0;
+      }
+      .box {
+        background-color: tomato;
+        border: 3px solid black;
+        display: inline-block;
+        font-size: 16px;
+        height: 100px;
+        width: 100px;
+      }
+
+      div {
+          border: 3px solid green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="boxes">
+      <div class="box">text</div>
+      <div class="box">text</div>
+      <div class="box">text</div>
+      <div class="box">text</div>
+      <div class="box">text</div>
+    </div>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem ducimus,
+      <span>inventore</span> commodi vel asperiores, atque consectetur a
+      dignissimos iste ullam veritatis quia officiis, deserunt facilis ipsam!
+      Iusto facilis sed quasi!
+    </p>
+    <p>short paragraph</p>
+    <p>short paragraph</p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+      consequuntur, animi fuga repellendus itaque dolore, fugit rerum iure ullam
+      ea dolor adipisci ut tenetur quaerat veritatis harum est soluta?
+      Inventore?
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+      consequuntur, animi fuga repellendus itaque dolore, fugit rerum iure ullam
+      ea dolor adipisci ut tenetur quaerat veritatis harum est soluta?
+      Inventore?
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+      consequuntur, animi fuga repellendus itaque dolore, fugit rerum iure ullam
+      ea dolor adipisci ut tenetur quaerat veritatis harum est soluta?
+      Inventore?
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+      consequuntur, animi fuga repellendus itaque dolore, fugit rerum iure ullam
+      ea dolor adipisci ut tenetur quaerat veritatis harum est soluta?
+      Inventore?
+    </p>
+    <ul>
+      <li>list item</li>
+    </ul>
+    <span>span</span>
+    <br>
+    <span>span</span>
+    <br>
+    <span>span</span>
+    <br>
+    <span>span</span>
+    <br>
+    <span>span</span>
+    <br>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <br>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+
+    <div>div</div>
+
+    <p>paragraph</p>
+    <p>paragraph</p>
+    <p>paragraph</p>
+  </body>
+</html>
