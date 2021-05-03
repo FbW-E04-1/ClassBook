@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* * {
+        box-sizing: border-box;
+      } */
+      .wall {
+        border: 3px solid black;
+        height: 500px;
+        width: 200px;
+      }
+      /* 200px + 16 + 16 + 5 + 5 */
+      /* 
+        An element by default has box-sizing: content-box;
+        In this case, .picture will have a width of 200px, but the padding and border will be added on top of that, so on the page the element will take a space of 242px (200 + 16 + 16 + 5 + 5)
+
+        If we change the box-sizing from content-box to border-box, the padding and border will grow towards the inside, without affecting the final size of the element
+      */
+      .picture {
+        border: 5px solid tomato;
+        height: 100px;
+        padding: 16px;
+        width: 200px;
+      }
+
+      li {
+        background-color: limegreen;
+        border: 3px solid tomato;
+        margin-top: 16px;
+        padding: 16px;
+      }
+      .container {
+          border: 3px solid red;
+          padding: 16px;
+          width: 900px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ul>
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+      </ul>
+
+      <div class="wall">
+        <div class="picture">
+          picture picturepicture picture picture picture picturepicture picture
+          picture picture picturepicture picture picture
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

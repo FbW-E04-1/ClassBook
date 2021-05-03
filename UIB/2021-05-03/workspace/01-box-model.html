@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+      This property can take 2 values:
+
+        content-box: (default) if we specify a width for the elements, the padding and border are added on top of the width
+        border-box: when we specify a width for an element, the padding and the border will be included in the width 
+        This is the preferred option and it's good practice to apply it to every element
+      */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      /*
+        Box model
+
+        (content): comes from the html, can be modified by width and height. From this we can start calculating the final size of an HTML element on the page
+
+        padding: the space between the content and the border
+
+        border: just a border
+
+        margin: empty space outside of an HTML element
+    */
+
+      span {
+        border: 3px solid seagreen;
+        margin-bottom: 32px;
+      }
+
+      div {
+        border: 3px solid darkmagenta;
+      }
+
+      a {
+        border: 3px solid aqua;
+      }
+
+      p {
+        border: 3px solid palevioletred;
+        margin-bottom: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <span>I'm a span</span>
+    <span>I'm another span</span>
+    <span>I'm yet another span</span>
+
+    <div>I'm a div</div>
+
+    <a href="">I'm a link</a>
+    <a href="">I'm a link</a>
+
+    <span>A span in between links</span>
+
+    <a href="">I'm a link</a>
+    <p>I'm a paragraph</p>
+    <p>I'm another paragraph</p>
+  </body>
+</html>
