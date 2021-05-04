@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 5px solid tomato;
+        float: left;
+      }
+      .box {
+        background: teal;
+        border: 5px solid wheat;
+        /* margin: 16px; */
+        height: 100px;
+        width: 100px;
+
+        float: right;
+      }
+
+      .no-float {
+          background-color: violet;
+          float: none;
+      }
+
+      .box-1 {
+          /* height: 200px; */
+      }
+
+      .clear-this {
+          clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1"></div>
+      <div class="box"></div>
+      <div class="box clear-this">I'm clear</div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <!-- <div class="box no-float"></div> -->
+    </div>
+  </body>
+</html>
