@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* 
+            Specificity
+
+            inline styles: 1000
+
+            id: 100
+
+            class: 10
+            pseudo-class: 10
+
+            type: 1
+
+        */
+
+      /* (1, 0, 0) => 100 */
+      #main-text {
+        color: blue;
+      }
+
+      /* (0, 1, 0) => 10 */
+      .some-class {
+        color: red;
+      }
+
+      /* (0, 3, 0) => 30 */
+      .some-class .another-class .text {
+        color: red;
+      }
+      /*
+
+        .text {
+            color: tomato;
+        }
+
+        p {
+            color: green;
+        } */
+
+      /* 20 */
+      /* .text.with-border {
+        border: 1px solid tomato;
+        color: green;
+      } */
+
+      /* 1 + 10 = 11 (0, 1, 1) */
+      /* div .text .with-border .without-backgground .something-else .something {
+        color: violet;
+      }
+
+      */
+
+      /* .black-text {
+          color: black;
+      } */
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <p
+        class="main-text text brown-text with-border black-text"
+        id="main-text"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsa
+        dolorem repellendus reprehenderit natus eaque commodi eius quidem ullam,
+        error consectetur assumenda soluta excepturi rerum! Rerum magni unde
+        vitae vel!
+      </p>
+    </div>
+
+  </body>
+</html>
