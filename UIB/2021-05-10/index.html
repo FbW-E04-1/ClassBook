@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Position</h1>
+    <p>
+      The position property let's us control the way an element is positioned
+      inside our HTML document.
+    </p>
+
+    <h2>Values</h2>
+    <p>The position property can have 5 possible values:</p>
+    <ul>
+      <li><code>static</code> (default)</li>
+      <li><code>relative</code></li>
+      <li><code>absolute</code></li>
+      <li><code>fixed</code></li>
+      <li><code>sticky</code></li>
+    </ul>
+
+    <p>
+      We say that an element is <strong>positioned</strong> when it has the
+      position property with any value other than <code>static</code>: in other
+      words, any value except the default one.
+    </p>
+
+    <h2>Controlling the position</h2>
+    <p>
+      Positioned elements (those with a position value other than
+      <code>static</code>) enable the use of 4 properties that are otherwise
+      ineffective:
+    </p>
+    <ul>
+      <li><code>top</code></li>
+      <li><code>right</code></li>
+      <li><code>bottom</code></li>
+      <li><code>left</code></li>
+    </ul>
+
+    <p>
+      Using any combination of those properties, we can change the position of
+      an element inside the document.
+    </p>
+
+    <h2>Static elements</h2>
+    <p>
+      Every evelements by default is <code>static</code>. Static elements simply
+      follow the flow of the document.
+    </p>
+
+    <h2>Relative positioned elements</h2>
+    <p>
+      The initial position of the element is the same as for the
+      <code>static</code> one. The difference is that with
+      <code>relative</code> elements we can now use the <code>top</code>,
+      <code>right</code>, <code>bottom</code>, <code>left</code> properties to
+      move them by a certain offset relative to themselves.
+    </p>
+
+    <p>For example:</p>
+    <pre>
+    <code>
+.relative {
+    position: relative;
+    left: 50px;
+}
+    </code>
+    </pre>
+
+    <p></p>
+  </body>
+</html>
