@@ -1,0 +1,46 @@
+table {
+  border: 3px solid black;
+  border-collapse: collapse;
+  /* table-layout: fixed; */
+  /* width: 100%; */
+}
+
+td {
+  border: 1px solid black;
+  padding: 0.5em;
+}
+
+th {
+  background-color: coral;
+  color: blue
+}
+
+tbody tr:nth-child(odd){
+  background-color: silver;
+}
+
+
+caption {
+  caption-side: bottom;
+  padding-top: 1em;
+}
+
+.columns {
+  background-color: green;
+  width: 8em;
+  border: 4px solid purple
+}
+
+.col-one {
+  background-color: blue;
+}
+
+td[rowspan] {
+  border-radius: 10em;
+  background-color: red;
+}
+
+td:empty {
+  background-color: #fee;
+  border: 3px dotted red
+}
