@@ -1,0 +1,9 @@
+form, fieldset {
+  width: 12em;
+  margin: auto;
+}
+
+label {
+  display: inline-block;
+  width: 7em;
+}

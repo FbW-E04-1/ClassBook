@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- endpoint -->
+    <form action="https://formspree.io/f/xrgrpdgq" method="POST">
+      <fieldset>
+        <legend>Your contact details</legend>
+
+        <div>
+          <label for="firstname_id">First name:</label>
+          <input
+            type="text"
+            value=""
+            placeholder="type your name here"
+            name="firstname"
+            id="firstname_id"
+          />
+        </div>
+
+        <div>
+          <label for="email_id">Email:</label>
+          <input
+            type="email"
+            value=""
+            placeholder="type your email here"
+            name="email"
+            id="email_id"
+          />
+        </div>
+
+        <div>
+          <label for="pass_id">Password:</label>
+          <input
+            type="password"
+            value=""
+            placeholder="type your password here"
+            name="pass"
+            id="pass_id"
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Professional Experience</legend>
+
+        <div>
+          <input
+            type="checkbox"
+            value="html"
+            name="experience"
+            id="html_id"
+          />
+          <label for="html_id">HTML</label>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            value="css"
+            name="experience"
+            id="css_id"
+          />
+          <label for="css_id">CSS</label>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            value="javascript"
+            name="experience"
+            id="js_id"
+          />
+          <label for="js_id">JavaScript</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Job Aspiration</legend>
+
+        <div>
+          <input
+            type="radio"
+            value="webdev"
+            name="job"
+            id="webdevID"
+          />
+          <label for="webdevID">Web Developer</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            value="designer"
+            name="job"
+            id="designerID"
+          />
+          <label for="designerID">Designer</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            value="manager"
+            name="job"
+            id="managerID"
+            checked
+          />
+          <label for="managerID">Manager</label>
+        </div>
+      </fieldset>
+
+      <br>
+
+      <input type="submit" value="Apply Now" />
+    </form>
+  </body>
+</html>
