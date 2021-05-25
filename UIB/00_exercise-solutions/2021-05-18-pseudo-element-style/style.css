@@ -1,0 +1,88 @@
+/* Part 1 */
+
+img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  #quotes li::before,
+  #quotes li::after {
+    content: "";
+    display: inline-block;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/161359/quotes.png);
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 3px;
+  }
+  
+  /* ******************************** */
+  
+  /* Part 2 */
+  
+  ul.link-list {
+    margin-bottom: 20vh;
+  }
+  
+  ul.link-list li {
+    padding: 10px;
+  }
+  
+  .file-icons {
+    display: flex;
+  }
+  
+  a {
+    font-family: "Courier New", Courier, monospace;
+    text-decoration: none;
+  }
+  
+  a[href$="pdf"]::after,
+  a[href$="xls"]::after,
+  a[href$="doc"]::after {
+    content: "";
+    display: inline-block;
+    height: 2em;
+    width: 2em;
+    margin-left: 10px;
+    vertical-align: middle;
+    background-size: contain;
+  }
+  
+  a[href$="pdf"]::after {
+    background-image: url(https://img.icons8.com/officel/64/000000/pdf.png);
+  }
+  a[href$="xls"]::after {
+    background-image: url(https://img.icons8.com/dusk/64/000000/ms-excel.png);
+  }
+  a[href$="doc"]::after {
+    background-image: url(https://img.icons8.com/dusk/64/000000/ms-word.png);
+  }
+  
+  /* Part 3 */
+  
+  .sandwich {
+    border: 1px solid;
+    margin-bottom: 3vh;
+  }
+  
+  /* common styles for our pseudos */
+  .sandwich::before,
+  .sandwich::after {
+    content: "";
+    height: 10px;
+    display: block;
+  }
+  
+  /* specific styles for our pseudos */
+  
+  /* gradient flow from right to left */
+  .sandwich::before {
+    background: linear-gradient(to left, #eaee44, #33d0ff);
+  }
+  
+  /* gradient flow opposite (from left to right) */
+  .sandwich::after {
+    background: linear-gradient(to right, #eaee44, #33d0ff);
+  }

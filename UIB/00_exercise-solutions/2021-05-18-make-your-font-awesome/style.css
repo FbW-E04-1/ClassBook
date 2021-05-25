@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.media-links {
+    list-style: none;
+    text-align: center;
+}
+
+.review {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px grey;
+}
