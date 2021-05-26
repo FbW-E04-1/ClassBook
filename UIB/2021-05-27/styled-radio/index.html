@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Radio</title>
+
+  <style>
+    fieldset {
+      width: 5em;
+    }
+
+    input[type=radio] {
+      -webkit-appearance: none;
+      width: 1em;
+      height: 1em;
+      border: 1px solid salmon;
+      border-radius: 1em;
+      transition: border 0.5s;
+    }
+
+    input[type=radio]:checked {
+      border: 0.5em solid green
+    }
+  </style>
+</head>
+<body>
+
+  <form action="">
+    <fieldset>
+      <label for="radio_1">
+        <input
+          type="radio"
+          name="group"
+          id="radio_1"
+          checked
+        >
+        Radio 1
+      </label>
+
+      <label for="radio_2">
+        <input
+          type="radio"
+          name="group"
+          id="radio_2"
+        >
+        Radio 2
+      </label>
+
+      <label for="radio_3">
+        <input
+          type="radio"
+          name="group"
+          id="radio_3"
+        >
+        Radio 3
+      </label>
+    </fieldset>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Switch</title>
+
+  <style>
+    .toggle {
+      --width: 2em;
+      --height: calc(var(--width) / 2);
+      --time: 0.5s;
+      --bgColor: salmon;;
+
+      display: inline-block;
+      cursor: pointer
+    }
+
+    .toggle div {
+      position: relative;
+      display: inline-block;
+      width: var(--width);
+      height: var(--height);
+      background-color: var(--bgColor);
+      border: 1px solid var(--bgColor);
+      border-radius: var(--height);
+      transition: background-color var(--time);
+      vertical-align: middle;
+    }
+
+    .toggle div::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: var(--height);
+      height: var(--height);
+      background-color: white;
+      border-radius: var(--height);
+      box-shadow: 1px 1px 2px black;
+      transition: transform var(--time);
+    }
+
+    input[type=checkbox]:checked + div {
+      border-color: green;
+      background-color: green;
+    }
+
+    input[type=checkbox]:checked + div:after {
+      transform: translateX(var(--height))
+    }
+    input[type=checkbox] {
+      display: none;
+    }
+  </style>
+
+</head>
+<body>
+
+  <form action="">
+    <label for="toggleA" class="toggle">
+      <input
+        type="checkbox"
+        name="switch"
+        id="toggleA"
+        checked
+      >
+      <div></div>
+      Toggle A
+    </label>
+
+    <label for="toggleB" class="toggle">
+      <input
+        type="checkbox"
+        name="switch"
+        id="toggleB"
+      >
+      <div></div>
+      <span>Toggle B</span>
+    </label>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Multiple</title>
+  </head>
+
+  <style>
+    select,
+    label,
+    input {
+      display: block;
+      margin-bottom: 1em;
+    }
+    label {
+      margin: 0;
+    }
+  </style>
+
+  <body>
+    <form action="">
+      <select name="single-select" required>
+        <!-- Set value of disable selected option to ""
+             or required will think the first option
+             _is_ selected
+        -->
+        <option value="" disabled selected>Select one...</option>
+        <option value="de">ein</option>
+        <option value="en">one</option>
+        <option value="es">una</option>
+        <option value="fr">une</option>
+        <option value="ru">один</option>
+      </select>
+
+      <select name="multiple-select" multiple size="6" required>
+        <option disabled>Select several...</option>
+        <option value="de">mehrere</option>
+        <option value="en">several</option>
+        <option value="es">varias</option>
+        <option value="fr">plusieurs</option>
+        <option value="ru">несколько</option>
+      </select>
+
+      <label for="text_id">Choose:</label>
+      <input type="text" list="numbers" name="datalist" id="text_id" required />
+      <datalist id="numbers">
+        <option value="Zahlen"></option>
+        <option value="numbers"></option>
+        <option value="números"></option>
+        <option value="numeros"></option>
+        <option value="числа"></option>
+      </datalist>
+
+      <input type="submit" value="Check Validity" />
+    </form>
+  </body>
+</html>

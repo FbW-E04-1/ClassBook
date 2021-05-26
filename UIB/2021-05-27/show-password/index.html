@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show Password</title>
+    <style>
+      input[type="text"]:invalid,
+      input[type="password"]:invalid {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="">
+      <label for="pass_id">Password</label>
+      <input
+        type="password"
+        name="pass"
+        id="pass_id"
+        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*|W).{8,}"
+        title="At least 8 characters with lowercase and uppercase letters, a number and a symbol"
+      />
+      <!-- Demo: https://regex101.com/r/lO9ob8/1/ -->
+
+      <!-- Use type="button" to prevent submitting the form -->
+      <!-- <input type="button" id="show_id" value="Show"> -->
+      <button type="button" id="show_id">Show</button>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <!-- JavaScript to toggle the input type between password and text -->
+    <script>
+      const input = document.getElementById("pass_id");
+      const show = document.getElementById("show_id");
+      let hide = true;
+
+      show.onmouseup = function (event) {
+        hide = !hide;
+        if (hide) {
+          input.type = "password";
+          show.innerText = "Show";
+        } else {
+          input.type = "text";
+          show.innerText = "Hide";
+        }
+      };
+    </script>
+  </body>
+</html>

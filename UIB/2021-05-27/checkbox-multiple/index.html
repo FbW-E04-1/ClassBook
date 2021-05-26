@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Checkboxes</title>
+  <style>
+    input[type=checkbox], label {
+      background-color: skyblue;
+    }
+    fieldset {
+      width: 4em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Use your own unique endpoint to receive an email with result -->
+  <form action="https://formspree.io/f/xrgrpdgq" method="post">
+    <fieldset>
+
+      <!-- There is a gap around the checkbox -->
+      <input
+        type="checkbox"
+        name="unique_name"
+        id="first"
+        value="one"
+      >
+      <label for="first">One</label>
+
+      <!-- Wrap label around checkbox to ensure no gaps-->
+      <label for="second">
+        <input
+          type="checkbox"
+          name="unique_name"
+          id="second"
+          value="two"
+        >
+        Two
+      </label>
+
+      <label for="third">
+        <input
+          type="checkbox"
+          name="unique_name"
+          id="third"
+          value="three"
+        >
+        Three
+      </label>
+
+      <label for="fourth">
+        <input
+          type="checkbox"
+          name="unique_name"
+          id="fourth"
+          value="four"
+        >
+        Four
+      </label>
+    </fieldset>
+    <br>
+    <input type="submit" value="Send unique_name values">
+  </form>
+
+</body>
+</html>
