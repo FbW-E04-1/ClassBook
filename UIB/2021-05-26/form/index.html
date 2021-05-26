@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <form action="https://formspree.io/f/xrgrpdgq" method="post">
+      <fieldset direction="rtl">
+        <legend>Personal Data</legend>
+
+        <div>
+          <label for="email_id">Your email:</label>
+          <input
+            type="email"
+            name="email_address"
+            value=""
+            id="email_id"
+            placeholder="Your email address"
+            required
+            pattern=".+"
+            title="Gmail addresses only"
+          />
+        </div>
+
+        <div>
+          <textarea
+            name=""
+            id=""
+
+            cols="30"
+            rows="10"
+
+            minlength="6"
+            maxlength="10"
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="teeshirt-size">Teeshirt size</label>
+          <select name="size" id="teeshirt-size" required>
+            <option value="" selected disabled>Choose your size</option>
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+            <option value="l">Large</option>
+            <option value="xxl">Extra Extra Large</option>
+          </select>
+        </div>
+
+        <div>
+          <input
+            type="date"
+            name="day"
+            id=""
+            min="2021-05-01"
+            max="today"
+            value="2021-05-26"
+          />
+        </div>
+
+        <input type="submit" value="Test" />
+      </fieldset>
+    </form>
+  </body>
+</html>
