@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /*
+        align-items 
+         
+        - show the different values of align-items 
+          - to make them work, the container needs to have a height
+        - to see the value baseline in action, make the font of individual boxes different
+
+        - stretch (default)
+        - flex-start
+        - flex-end
+        - center
+        */
+      .container {
+        border: 3px solid tomato;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .box-2 {
+        font-size: 16px;
+      }
+      .box-3 {
+        font-size: 24px;
+      }
+      .box-4 {
+        font-size: 60px;
+      }
+
+      .box-7 {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <div class="box box-6">6</div>
+      <div class="box box-7">7</div>
+      <div class="box box-6">jq</div>
+      <div class="box box-6">gp</div>
+      <div class="box box-6">ah</div>
+    </div>
+  </body>
+</html>

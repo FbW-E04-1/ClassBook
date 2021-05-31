@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+}
+
+.box {
+  color: #fff;
+  font-size: 5em;
+  padding: 1rem;
+  text-align: center;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.box-1 {
+  background: #5c0029;
+}
+.box-2 {
+  background: #94bfbe;
+}
+.box-3 {
+  background: #f1c40f;
+}
+.box-4 {
+  background: #00cc66;
+}
+.box-5 {
+  background: #ff88dc;
+}
+.box-6 {
+  background: #2274a5;
+}
+.box-7 {
+  background: #ffe66d;
+}
+.box-8 {
+  background: #3d405b;
+}
+.box-9 {
+  background: #188fa7;
+}
+.box-10 {
+  background: #2a9d8f;
+}
