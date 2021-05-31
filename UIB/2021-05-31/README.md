@@ -17,7 +17,7 @@
 
 ### Notes
 
-[Video recording]()
+[Video recording](https://drive.google.com/file/d/1hM4svimZ15iZbUrQRVWTfOWqTX0PBubY/view?usp=sharing)
 
 - 9:35 Flex Box intro
 - 9:52 Flex-direction property 
@@ -30,6 +30,12 @@
 - 11:50 Flex / align items (aligns individual items) vs align content (aligns rows of individual items as a bulk)
 - 12:12 Align-self property
 
+
+---
+
+## Exercises
+[Flexing - flexbox challenges](https://classroom.github.com/a/CvlIf-6J)
+[Warp club](https://classroom.github.com/a/6OsJ-gV3)
 
 ---
 
