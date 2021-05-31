@@ -19,7 +19,7 @@ Add your name, GitHub username with link, and role in the table below
 |Carlo Trimarchi|[carlotrimarchi](https://github.com/carlotrimarchi)|teacher|
 |Emad Soltan|[emsoltan](https://github.com/emsoltan)| representative |
 |Gabri Ber||student|
-|Mohammad Olfatee||student|
+|Mohammad Olfatee|[m-olfatee](https://github.com/m-olfatee)|student|
 |Patryk Lisowski|[viest1](https://github.com/viest1/)|student|
 |David Rabinovich|[kodamok](https://github.com/kodamok)|student|
 |Muhanad Osman|[MuhanadOsman](https://github.com/MuhandOsman)| student|
