@@ -9,6 +9,8 @@
 
 ## Lesson
 
+[Video recording](https://drive.google.com/file/d/1oCXLC3r4r0zBuYXeLeeHy06VYCfYiiHw/view?usp=sharing)
+
 
 ## Exercises
 
