@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /*
+        flex (the property, not the value of display)
+
+        default value of flex is:
+       flex: 0 1 auto;
+       (flex-grow: 0, flex-shrink: 1, flex-basis: auto)
+
+        flex is a shorthand for these 3 properties:
+        - flex-grow
+        - flex-shrink
+        - flex-basis
+
+        - examples with a single value
+
+        */
+
+      .container {
+        border: 5px solid turquoise;
+        display: flex;
+      }
+
+      /*
+
+      available space = 300px
+
+      300 / 3 = 100
+
+
+      */
+
+      .box {
+        /* flex-grow: 1; */
+      }
+
+      .box-1 {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 200px;
+      }
+
+      .box-2 {
+        flex-grow: 1;
+        flex-shrink: 5;
+        flex-basis: 250px;
+      }
+
+      .box {
+        /* flex: 1; */
+      }
+      /* .box {
+        width: 25%;
+      } */
+      /* .box {
+        flex: 1;
+      }
+
+      .box-2 {
+        flex: 2;
+      } */
+
+      .container {
+        margin-bottom: 5rem;
+      }
+
+      .container-2 div {
+        border: 3px solid tomato;
+        /* flex: 1; */
+        padding: 1.5rem;
+      }
+
+      .main-nav {
+        display: flex;
+        list-style-type: none;
+      }
+
+      li:not(:first-child) {
+        border: 1px solid black;
+        margin-left: 1.5rem;
+      }
+
+      .contact {
+        flex-grow: 1;
+        text-align: right;
+      }
+      .flex-img {
+        flex-grow: 1;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="main-nav">
+        <li>home</li>
+        <li>work</li>
+        <li>about</li>
+        <li class="contact"><a href="">contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <!-- <div class="box box-5">5</div> -->
+      <!-- <div class="box box-6">6</div> -->
+      <!-- <div class="box box-7">7</div> -->
+      <!-- <div class="box box-7">7</div>
+      <div class="box box-8">8</div>
+      <div class="box box-9">9</div>
+      <div class="box box-10">10</div> -->
+    </div>
+    <div class="container container-2">
+      <div>Two words</div>
+      <div>thre other words</div>
+    </div>
+    <div class="container container-2">
+      <div>Two words</div>
+      <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+        architecto recusandae neque, esse delectus, doloribus dolore excepturi
+        ab, veniam soluta dignissimos debitis est ex in laborum molestias saepe
+        eveniet eius.
+      </div>
+    </div>
+    <!-- <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum incidunt
+        necessitatibus ducimus excepturi dicta unde molestiae laborum qui?
+        Adipisci incidunt, quam reiciendis odit voluptas quibusdam alias quidem
+        necessitatibus voluptatem esse!
+      </p>
+      <img src="http://placekitten.com/g/500/300" />
+    </div> -->
+  </body>
+</html>
