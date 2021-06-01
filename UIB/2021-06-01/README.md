@@ -12,7 +12,7 @@
 
 ## Exercises
 
-[Out of ordinary](https://classroom.github.com/a/5GEQijAk)
-[Flextube](https://classroom.github.com/a/R4OxSZew)
+- [Out of ordinary](https://classroom.github.com/a/5GEQijAk)
+- [Flextube](https://classroom.github.com/a/R4OxSZew)
 
 ## Resources
