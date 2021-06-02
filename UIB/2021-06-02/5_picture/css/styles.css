@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p,
+picture,
+img {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+@media only screen and (orientation: landscape) {
+  main {
+    flex-direction: row;
+  }
+
+  main p {
+    order: -1;
+  }
+
+  p,
+  picture {
+    width: 50%;
+  }
+}
+
+@medio only screen and (min:w);

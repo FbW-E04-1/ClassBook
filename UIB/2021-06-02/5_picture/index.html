@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media-Flex</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <picture>
+        <source
+          srcset="img/clockwork_1000.webp"
+          media="(min-width: 1200px), (min-height: 1200px)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="img/clockwork_1000.jpg"
+          media="(min-width: 1200px), (min-height: 1200px)"
+        />
+        <source
+          srcset="img/clockwork_1000.jpg"
+          media="(min-width: 768px), (min-height: 768px)"
+        />
+
+        <source
+          srcset="img/clockwork_500.jpg"
+          media="(min-width: 361px)"
+        />
+        <source srcset="img/clockwork_250.jpg" />
+
+        <img src="img/clockwork_600_BW.jpg" alt="clockwork" />
+      </picture>
+
+      <p>
+        A clockwork mechanism is often powered by a clockwork motor consisting
+        of a mainspring, a spiral torsion spring of metal ribbon. Energy is
+        stored in the mainspring manually by winding it up, turning a key
+        attached to a ratchet which twists the mainspring tighter. Then the
+        force of the mainspring turns the clockwork gears, until the stored
+        energy is used up. The adjectives <em>wind-up</em> and
+        <em>spring-powered</em> refer to mainspring-powered clockwork devices,
+        which include clocks and watches, kitchen timers, music boxes, and
+        wind-up toys.
+      </p>
+    </main>
+  </body>
+</html>

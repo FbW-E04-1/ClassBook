@@ -1,0 +1,53 @@
+html {
+  font-size: 4vw;
+}
+
+h1 {
+  font-size: 1.33em;
+}
+
+h2 {
+  font-size: 1.21em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  html {
+    /* font-size: 24px; */
+  }
+
+  h1 {
+    font-size: 2.3em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+}

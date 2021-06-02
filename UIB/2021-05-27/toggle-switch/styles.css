@@ -1,0 +1,43 @@
+.switch {
+  --width: 1.5em;
+  --height: calc(var(--width) / 2);
+  --offColour: blue;
+  --onColour: green;
+}
+
+span {
+  display: inline-block;
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+  background-color: var(--offColour);
+  border: 1px solid var(--offColour);
+  border-radius: var(--height);
+}
+
+span::after { /* pseudo element ::colon */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: var(--height);
+  height: var(--height);
+  border-radius: var(--height);
+  background-color: white;
+
+  box-shadow: 0 0 4px black;
+}
+
+input[type=checkbox]:checked ~ span {
+  background-color: var(--onColour);
+  border-color: var(--onColour);
+}
+
+input[type=checkbox]:checked ~ span::after {
+  transform: translateX(var(--height));
+}
+
+input[type=checkbox] {
+  /* width: 0; */
+}

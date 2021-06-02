@@ -1,0 +1,56 @@
+html {
+  background-color: black;
+}
+
+body {
+  background-color: salmon;
+  height: 100vh;
+}
+
+@media screen and (min-width: 320px) {
+  body {
+    background-color: crimson;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: palegreen;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: green;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: darkgreen;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: skyblue;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: royalblue;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: navy;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-color: purple;
+  }
+}
