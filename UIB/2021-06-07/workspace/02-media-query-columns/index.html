@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      img {
+        border-radius: 50%;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      figure {
+        height: 200px;
+        width: 200px;
+      }
+
+      .grid {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+
+      @media (min-width: 520px) {
+        .grid {
+          flex-direction: row;
+        }
+      }
+
+      @media (min-width: 720px) {
+        .grid {
+          flex-direction: row;
+        }
+        .grid-item {
+          flex-basis: 50%;
+        }
+      }
+      @media (min-width: 1160px) {
+        .grid-item {
+          flex: 1;
+        }
+      }
+
+      .grid-item {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="grid-item">
+        <figure>
+          <img src="cat.jpg" />
+        </figure>
+        <h3>Mike</h3>
+        <p>Founder / CEO</p>
+      </div>
+      <div class="grid-item">
+        <figure>
+          <img src="rhino.jpg" />
+        </figure>
+        <h3>Carmen</h3>
+        <p>CTO</p>
+      </div>
+      <div class="grid-item">
+        <figure>
+          <img src="giraffe.jpg" />
+        </figure>
+        <h3>George</h3>
+        <p>Marketing and stuff</p>
+      </div>
+      <div class="grid-item">
+        <figure>
+          <img src="alpaca.jpg" />
+        </figure>
+        <h3>Lucia</h3>
+        <p>Full-stack developer</p>
+      </div>
+    </div>
+  </body>
+</html>

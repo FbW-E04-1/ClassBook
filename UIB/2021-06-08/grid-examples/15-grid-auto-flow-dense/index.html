@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      /* 
+      - Put the item-4 on the first line and make it span 10 rows
+      - do the same thing, but using line names
+        */
+      .container {
+        border: 3px solid goldenrod;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(10, 1fr);
+        grid-auto-flow: dense;
+      }
+
+      .item:nth-child(6n) {
+        background: lightseagreen;
+        grid-column: span 6;
+      }
+
+      .item:nth-child(8n) {
+        background:orchid;
+        grid-column: span 2;
+      }
+
+      .item:nth-child(9n) {
+        background:yellowgreen;
+        grid-row: span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-1">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">3</div>
+      <div class="item item-4">4</div>
+      <div class="item item-5">5</div>
+      <div class="item item-6">6</div>
+      <div class="item item-7">7</div>
+      <div class="item item-8">8</div>
+      <div class="item item-9">9</div>
+      <div class="item item-10">10</div>
+      <div class="item item-11">11</div>
+      <div class="item item-12">12</div>
+      <div class="item item-13">13</div>
+      <div class="item item-14">14</div>
+      <div class="item item-15">15</div>
+      <div class="item item-16">16</div>
+      <div class="item item-17">17</div>
+      <div class="item item-18">18</div>
+      <div class="item item-19">19</div>
+      <div class="item item-20">20</div>
+      <div class="item item-21">21</div>
+      <div class="item item-22">22</div>
+      <div class="item item-23">23</div>
+      <div class="item item-24">24</div>
+      <div class="item item-25">25</div>
+      <div class="item item-26">26</div>
+      <div class="item item-27">27</div>
+      <div class="item item-28">28</div>
+      <div class="item item-29">29</div>
+      <div class="item item-30">30</div>
+      <div class="item item-31">31</div>
+      <div class="item item-32">32</div>
+      <div class="item item-33">33</div>
+      <div class="item item-34">34</div>
+      <div class="item item-35">35</div>
+      <div class="item item-36">36</div>
+      <div class="item item-37">37</div>
+      <div class="item item-38">38</div>
+      <div class="item item-39">39</div>
+      <div class="item item-40">40</div>
+      <div class="item item-41">41</div>
+      <div class="item item-42">42</div>
+      <div class="item item-43">43</div>
+      <div class="item item-44">44</div>
+      <div class="item item-45">45</div>
+      <div class="item item-46">46</div>
+      <div class="item item-47">47</div>
+      <div class="item item-48">48</div>
+      <div class="item item-49">49</div>
+      <div class="item item-50">50</div>
+      <div class="item item-51">51</div>
+      <div class="item item-52">52</div>
+      <div class="item item-53">53</div>
+      <div class="item item-54">54</div>
+      <div class="item item-55">55</div>
+      <div class="item item-56">56</div>
+      <div class="item item-57">57</div>
+      <div class="item item-58">58</div>
+      <div class="item item-59">59</div>
+      <div class="item item-60">60</div>
+      <div class="item item-61">61</div>
+      <div class="item item-62">62</div>
+      <div class="item item-63">63</div>
+      <div class="item item-64">64</div>
+      <div class="item item-65">65</div>
+      <div class="item item-66">66</div>
+      <div class="item item-67">67</div>
+      <div class="item item-68">68</div>
+      <div class="item item-69">69</div>
+      <div class="item item-70">70</div>
+      <div class="item item-71">71</div>
+      <div class="item item-72">72</div>
+      <div class="item item-73">73</div>
+      <div class="item item-74">74</div>
+      <div class="item item-75">75</div>
+      <div class="item item-76">76</div>
+      <div class="item item-77">77</div>
+      <div class="item item-78">78</div>
+      <div class="item item-79">79</div>
+      <div class="item item-80">80</div>
+    </div>
+  </body>
+</html>

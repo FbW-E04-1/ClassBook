@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      h2 {
+        font-size: 2.5em;
+      }
+
+      p {
+        font-size: 1.5em;
+      }
+
+      .wrapper {
+        margin: auto;
+        max-width: 960px;
+      }
+
+      .split {
+        display: flex;
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+
+      .split .content {
+        flex: 1;
+      }
+      .split figure {
+        display: none;
+        flex: 1;
+      }
+      @media (min-width: 900px) {
+        .split figure {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="split">
+        <div class="content">
+          <h2>About us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            error quibusdam libero minus inventore molestias adipisci provident
+            sequi aperiam exercitationem voluptatem, earum, dolore laboriosam
+            velit quidem laborum eum, repudiandae sint!
+          </p>
+        </div>
+        <figure>
+          <img src="mission.png" />
+        </figure>
+      </div>
+    </div>
+  </body>
+</html>

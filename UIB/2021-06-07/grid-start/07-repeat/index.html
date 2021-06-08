@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      /* 
+      Use the repeat() function to create a grid with 4 columns 
+      Show how we can pass multiple values to repeat()
+
+
+        grid-template-columns: repeat(2, 1fr) 200px repeat(2, 100px) 100px 100px repeat(3, 50px);
+        grid-template-columns: 1fr 1fr        200px 100px 100px      100px 100px 50px 50px 50px;
+        */
+      .container {
+        display: grid;
+        gap: 20px;
+
+        /* grid-template-columns: 1fr 1fr 100px 100px; */
+
+        /* grid-template-columns: repeat(2, 1fr) repeat(2, 100px); */
+
+        /* grid-template-columns: repeat(2, 1fr) repeat(2, 100px); /* 1fr 1fr 100px 100px */
+        /* grid-template-columns: repeat(2, minmax(200px, 1fr)) repeat(2, 100px); /* 1fr 1fr 100px 100px */
+
+        /* 8 columns alternating between 50px and 100px*/
+        /* grid-template-columns: 50px 100px 50px 100px 50px 100px 50px 100px; */
+        /* grid-template-columns: repeat(4, 50px 100px); */
+        /* grid-template-columns: minmax(100px, 1fr) 200px 300px;
+        grid-template-rows: 100px 200px; */
+        /* grid-template-columns: repeat(2, 1fr) repeat(2, 100px);
+        grid-template-rows: repeat(2, 100px); */
+        grid-template-columns: 200px repeat(2, minmax(100px, 300px)) 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-1">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">3</div>
+      <div class="item item-4">4</div>
+      <div class="item item-5">5</div>
+      <div class="item item-6">6</div>
+      <div class="item item-7">7</div>
+      <div class="item item-8">8</div>
+      <div class="item item-9">9</div>
+      <div class="item item-10">10</div>
+      <div class="item item-11">11</div>
+      <div class="item item-12">12</div>
+      <div class="item item-13">13</div>
+      <div class="item item-14">14</div>
+      <div class="item item-15">15</div>
+      <div class="item item-16">16</div>
+      <div class="item item-17">17</div>
+      <div class="item item-18">18</div>
+      <div class="item item-19">19</div>
+      <div class="item item-20">20</div>
+    </div>
+  </body>
+</html>

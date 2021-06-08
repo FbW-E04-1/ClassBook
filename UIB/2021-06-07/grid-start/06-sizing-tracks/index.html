@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      /* Play with the fr unit and show why percentages are not a good choices for grid tracks.
+       Show how the fr unit behaves when mixing it with fixed px values 
+       Use the auto keyword
+
+       - use minmax
+
+
+       1000px space available
+
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+
+       1000 / 4 = 250
+
+       grid-template-columns: 2fr 1fr 1fr 1fr;
+
+       1000 / 5 = 200
+        */
+      .container {
+        border: 3px solid aqua;
+        display: grid;
+        gap: 20px;
+
+        /* grid-template-columns: 25% 25% 25% 25%; */
+        grid-template-columns: 100px 1fr 100px auto;
+        /* grid-template-columns: 100px 100px 100px 100px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-1">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">3</div>
+      <div class="item item-4">4</div>
+      <div class="item item-4">4</div>
+      <div class="item item-4">4</div>
+      <div class="item item-4">4</div>
+      <div class="item item-4">4</div>
+      <div class="item item-4">4</div>
+      <div class="item item-4">4</div>
+      <div class="item item-4">4</div>
+      <div class="item item-4">4</div>
+      <div class="item item-4">4</div>
+      <div class="item item-4">4</div>
+      <div class="item item-4">4</div>
+    </div>
+  </body>
+</html>

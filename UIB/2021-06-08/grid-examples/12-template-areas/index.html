@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      /* 
+      - Create a layout with nav on top, sidebar-1 on the left, content in the middle, sidebar-2 on the right and footer at the bottom
+      - use the dot "." inside a template area to leave an empty cell
+        */
+      .container {
+        border: 3px solid goldenrod;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 8fr 1fr;
+        grid-template-rows: 100px 150px 150px 100px;
+        grid-template-areas:
+          "nav nav nav"
+          "sidebar-1 content sidebar-2"
+          "sidebar-1 content sidebar-2"
+          "footer footer footer";
+      }
+
+      .navigation {
+        grid-area: nav;
+      }
+
+      .sidebar-1 {
+        grid-area: sidebar-1; /* sidebar-1-start sidebar-1-end */
+      }
+
+      .sidebar-2 {
+        grid-area: sidebar-2;
+      }
+      .main-content {
+        grid-area: content;
+      }
+
+      .footer {
+        grid-area: footer;
+      }
+
+      
+      @media (max-width: 800px) {
+        .container {
+          grid-template-areas:
+          "nav nav nav"
+          "content content content"
+          "sidebar-1 sidebar-1 sidebar-2"
+          "footer footer footer"
+          ;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="item navigation">Navigation</nav>
+      <div class="item sidebar-1">Sidebar 1</div>
+      <div class="item main-content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+          reprehenderit nemo consequuntur libero quis sit, quasi, nisi obcaecati
+          vel aut rerum eveniet debitis! Accusantium quidem deserunt quam?
+          Ipsam, doloremque. Aliquid?
+        </p>
+      </div>
+      <div class="item sidebar-2">sidebar 2</div>
+      <footer class="item footer">Footer</footer>
+    </div>
+  </body>
+</html>

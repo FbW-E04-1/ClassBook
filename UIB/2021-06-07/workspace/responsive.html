@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      div {
+        border: 1px solid grey;
+        margin-bottom: 1.5rem;
+        padding: 1.5rem;
+      }
+
+      /*
+min-width: 700px
+If the window is equal or larger than 700px 
+
+max-width: 1000px
+If the window is equal or smaller than 1000px
+
+
+breakpoints
+*/
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      @media (min-width: 700px) {
+        .grid {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .grid > div {
+          /* flex: 0 1 50%; */
+          /* flex: 1; */
+          /* flex-basis: 50%; */
+        }
+      }
+
+      @media (min-width: 524px) {
+        .grid > div {
+          flex-basis: 33.33%;
+        }
+      }
+
+      @media (min-width: 500px) and (max-width: 700px) {
+        body {
+          background: limegreen;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My website</h1>
+    <div class="grid">
+      <div>
+        <h2>First section</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          nemo quod ullam tempore fugit aliquid obcaecati iure? Nam quia numquam
+          sit suscipit magnam earum amet, rem quae, a architecto dolore.
+        </p>
+      </div>
+      <div>
+        <h2>First section</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          nemo quod ullam tempore fugit aliquid obcaecati iure? Nam quia numquam
+          sit suscipit magnam earum amet, rem quae, a architecto dolore.
+        </p>
+      </div>
+      <div>
+        <h2>First section</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          nemo quod ullam tempore fugit aliquid obcaecati iure? Nam quia numquam
+          sit suscipit magnam earum amet, rem quae, a architecto dolore.
+        </p>
+      </div>
+      <div>
+        <h2>First section</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          nemo quod ullam tempore fugit aliquid obcaecati iure? Nam quia numquam
+          sit suscipit magnam earum amet, rem quae, a architecto dolore.
+        </p>
+      </div>
+      <div>
+        <h2>First section</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          nemo quod ullam tempore fugit aliquid obcaecati iure? Nam quia numquam
+          sit suscipit magnam earum amet, rem quae, a architecto dolore.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

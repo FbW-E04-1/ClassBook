@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      /* 
+      - Show how auto-fill and auto-fit behave the same when we have enough items
+      - show the difference with only 4 grid items
+      - use auto-fill to put a single item at the end of the track
+        */
+      .container {
+        border: 3px solid goldenrod;
+        display: grid;
+        gap: 20px;
+        /* grid-template-columns: repeat(auto-fill, 100px); */
+        grid-template-columns: repeat(4, 100px);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-1">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">3</div>
+      <div class="item item-4">4</div>
+    </div>
+  </body>
+</html>
