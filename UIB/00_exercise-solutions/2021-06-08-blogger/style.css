@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Helvetica;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: repeat(3, 200px) repeat(2, 150px) 100px 200px;
+  gap: 20px;
+  padding: 20px;
+  background: #f1f1f1;
+}
+div {
+  padding: 20px;
+}
+h2,
+h3,
+h4,
+p {
+  padding: 5px 0;
+}
+p {
+  font-size: 1.4rem;
+  font-weight: 200;
+  text-align: justify;
+  line-height: 2.2rem;
+}
+.card3 p,
+.card5 p {
+  font-size: 1.2rem;
+}
+img {
+  object-fit: cover;
+  margin: 10px 0;
+  cursor: pointer;
+  display: block;
+}
+
+/* Header */
+header {
+  grid-area: 1/1/2/3;
+  /* border: 1px solid black; */
+
+  font-size: 3rem;
+  text-align: center;
+  line-height: 200px;
+  background: white;
+}
+.card1 {
+  grid-area: 2/1/4/2;
+  /* border: 1px solid black; */
+  background: white;
+}
+.card2 {
+  grid-area: 4/1/7/2;
+  /* border: 1px solid black; */
+  background: white;
+}
+.card3 {
+  grid-area: 2/2/3/3;
+  /* border: 1px solid black; */
+  background: white;
+}
+.card4 {
+  grid-area: 3/2/5/3;
+  /* border: 1px solid black; */
+  background: white;
+}
+.card5 {
+  grid-area: 5/2/6/3;
+  /* border: 1px solid black; */
+  background: white;
+}
+
+/* Footer */
+footer {
+  grid-area: 7/1/8/3;
+  /* border: 1px solid black; */
+
+  text-align: center;
+  line-height: 200px;
+  background: #ddd;
+}
