@@ -16,26 +16,29 @@
         border: 3px solid goldenrod;
         display: grid;
         gap: 20px;
-        grid-template-areas:
-          "left left left left right right right"
-          "left left left left right right right"
-          "left left left left pizza pizza broccoli"
-          "left left left left pizza pizza broccoli";
+        /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px 200px; */
+        grid-template-areas: 
+          "left left left right right"
+          "left left left right right"
+          "left left left right right"
+          "left left left right right"
+          "left left left pizza pizza"
+          "left left left pizza pizza"
+          ;
       }
 
       .item-1 {
-        grid-area: left;
+        /* grid-area: left; */
       }
 
       .item-2 {
         background: greenyellow;
-        grid-column: right-start / right-end;
+        grid-area: pizza;
       }
 
       .item-3 {
         background: lightgreen;
-        grid-column: pizza-start / pizza-end;
-        grid-row: pizza-start / pizza-end;
       }
     </style>
   </head>

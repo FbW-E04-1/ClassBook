@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: minmax(200px, 1fr) minmax(300px, 1fr);
+        }
+
+        .container div {
+            background-color: tomato;
+            border: 5px solid springgreen;
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+    </div>
+    
+</body>
+</html>

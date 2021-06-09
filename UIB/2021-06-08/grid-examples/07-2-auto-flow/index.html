@@ -7,21 +7,18 @@
     <link rel="stylesheet" href="../style.css" />
     <style>
       /* 
-      Show the difference between using auto-fill and auto-fit in combination with minmax()
+         grid-auto-rows: ;
+        grid-auto-columns: ; 
 
-        grid-template-columns: repeat(6, 150px);
-        grid-template-columns: repeat(6, minmax(150px, 1fr)); 
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+      height of the container with fr units on rows
         */
       .container {
-        border: 3px solid goldenrod;
         display: grid;
-        gap: 20px;
-        /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 100px 100px;
+        grid-auto-flow: row;
+        grid-auto-rows: 200px;
       }
-
     </style>
   </head>
   <body>
@@ -55,6 +52,8 @@
       <div class="item item-16">16</div>
       <div class="item item-17">17</div>
       <div class="item item-18">18</div>
+      <div class="item item-19">19</div>
+      <div class="item item-20">20</div>
     </div>
   </body>
 </html>
