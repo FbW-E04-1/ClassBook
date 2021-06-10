@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+
+div.ball {
+  position: absolute;
+  text-align: center;
+  font-size: 3em;
+  width: 10vmin;
+  height: 10vmin;
+  clip-path: circle();
+}
+
+div.red {
+  background-color: red;
+  --top: 0vh;
+  --rotation: 1440deg;
+
+  animation-name: bounce, spin, move;
+  animation-duration: 1s, 2s, 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in, linear, linear;
+  animation-direction: alternate;
+  animation-delay: 0s, -1s, 0s;
+}
+
+div.green {
+  background-color: green;
+  --top: 50vh;
+  --rotation: 360deg;
+
+  animation-name: bounce, spin, move;
+  animation-duration: 0.8s, 1s, 4.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in, linear, linear;
+  animation-direction: alternate, normal;
+}
+
+
+div.ground{
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+}
+
+@keyframes bounce {
+  0% {
+    top: var(--top);
+  }
+
+  100% {
+    top: calc(90vh - 10vmin);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(var(--rotation));
+  }
+}
+
+@keyframes move {
+  0% {
+    left: 0
+  }
+  100% {
+    left: calc(100vw - 10vmin);
+  }
+}

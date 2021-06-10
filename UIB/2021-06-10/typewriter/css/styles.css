@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+h1 {
+  position: fixed;
+  bottom: 0;
+  color: grey;
+  width: 100%;
+  text-align: center;
+}
+
+
+p {
+  color: green;;
+  font-size: 6vw;
+  font-family: 'Courier New', Courier, monospace;
+
+  width: 0ch;
+  overflow: hidden;
+  border-right: 2px solid white;
+  white-space: nowrap;
+}
+
+
+p.screenplay {
+  --width: 24ch;
+  animation: typewriter 6s steps(24) forwards, cursor 1s 7 forwards;
+}
+
+
+p.music {
+  --width: 16ch;
+  animation: typewriter 6s 6s steps(16) forwards, cursor 1s infinite;
+}
+
+
+@keyframes typewriter {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: var(--width);
+  }
+  90% {
+    width: var(--width);
+  }
+  100% {
+    width: 0ch;
+  }
+}
+
+@keyframes cursor {
+  from {
+    border-color: white;
+  }
+  to {
+    border-color: transparent;
+  }
+}

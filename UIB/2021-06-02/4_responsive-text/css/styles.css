@@ -1,53 +1,51 @@
 html {
-  font-size: 4vw;
-}
-
-h1 {
-  font-size: 1.33em;
-}
-
-h2 {
-  font-size: 1.21em;
+  font-size: 16px;
 }
 
 h3 {
-  font-size: 1.1em;
+  font-size: 1.1rem
 }
 
+h2 {
+  font-size: 1.2rem
+}
 
-@media screen and (min-width: 480px) {
+h1 {
+  font-size: 1.3rem
+}
+
+@media screen and (min-width:400px) {
   html {
-    font-size: 20px;
-  }
-
-  h1 {
-    font-size: 1.6em;
-  }
-
-  h2 {
-    font-size: 1.4em;
-  }
-
-  h3 {
-    font-size: 1.2em;
+    font-size: calc(16px + 8 * (100vw - 400px) / 600);
   }
 }
 
+/* calc ( initialSize in px
+        + (finalSize - initialSize)
+          * (100vw - initialWidth in px) /
+                      (finalWidth - initialWidth)
+        )
 
-@media screen and (min-width: 800px) {
+*/
+/* 500px 8/6 = 17.3333
+   600px 8/3 = 18.666667
+   1000px 600 / 600 * 8 16px = 1*8= 24
+*/
+
+@media screen and (min-width:1000px){
   html {
-    /* font-size: 24px; */
-  }
-
-  h1 {
-    font-size: 2.3em;
-  }
-
-  h2 {
-    font-size: 1.8em;
+    font-size: 24px;
   }
 
   h3 {
-    font-size: 1.3em;
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
   }
 }

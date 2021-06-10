@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: black;
+  color: white;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vmin;
+  clip-path: circle(5% at 55% 39%);
+  transition: 1s
+}
+
+img:hover {
+  clip-path: circle(82% at 55% 39%);
+}
+
+div {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100vmin;
+  height: 100vmin;
+  /* background-color: red; */
+  /* opacity: 0.5; */
+
+  clip-path: polygon(
+    50% 34%,
+    60% 34%,
+    60% 44%,
+    0% 44%,
+    0 100%,
+    100% 100%,
+    100% 0,
+    0 0,
+    0 44%,
+    50% 44%
+  )
+}
