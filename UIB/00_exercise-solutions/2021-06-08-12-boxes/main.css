@@ -1,0 +1,43 @@
+
+.container {
+    border: 5px solid red;
+    height: 700px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+
+.item {
+    border: 5px solid blue;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+}
+
+ .two {
+    grid-column: 2/4;
+    grid-row: 1;
+    background-color: blue;
+}
+
+
+.six {
+    grid-column: 3/5;
+    grid-row: 2;
+    background-color: green;
+}
+
+.nine {
+    grid-column: 2;
+    grid-row: 3/5;
+    background-color: orange;
+}
+
+.ten {
+    grid-column: 4;
+    grid-row: 3/5;
+    background-color: purple;
+}
+ 
+
