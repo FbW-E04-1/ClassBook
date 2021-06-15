@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" value="width=device-width, initial-scale=1" />
+        <title>My Bootstrap Website</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+            crossorigin="anonymous"
+        />
+
+    </head>
+    <body>
+        <!-- Combination of Utility Classes e.g Text, Colors, Spacing, Border -->
+        <!-- Fluid Container https://getbootstrap.com/docs/5.0/layout/containers/#fluid-containers -->
+        <div class="container-fluid bg-info rounded-3">
+            <div class="p-5 text-center">
+                <h1 class="display-4">Bootstrap Page</h1>
+                <p class="lead">Create this</p>
+            </div>
+        </div>
+        <!-- Fluid Container https://getbootstrap.com/docs/5.0/layout/containers/#fluid-containers -->
+        <div class="container-fluid bg-light border-bottom">
+            <!-- Component: https://getbootstrap.com/docs/5.0/components/navs-tabs/#horizontal-alignment -->
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Content</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Default Container https://getbootstrap.com/docs/5.0/layout/containers/#default-container -->
+        <div class="container pt-5 pb-5">
+            <!-- Grid: https://getbootstrap.com/docs/5.0/layout/grid/ with vertical gutters https://getbootstrap.com/docs/5.0/layout/gutters/#vertical-gutters and responsive classes https://getbootstrap.com/docs/5.0/layout/grid/#responsive-classes -->
+            <div class="row gy-2">
+                <div class="col-md">
+                    <!-- Typography https://getbootstrap.com/docs/5.0/content/typography/ -->
+                    <h2 class="h4 fw-normal">Column 1</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                    </p>
+                </div>
+                <div class="col-md">
+                    <!-- Typography https://getbootstrap.com/docs/5.0/content/typography/ -->
+                    <h2 class="h4 fw-normal">Column 2</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                    </p>
+                </div>
+                <div class="col-md">
+                    <!-- Typography https://getbootstrap.com/docs/5.0/content/typography/ -->
+                    <h2 class="h4 fw-normal">Column 3</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Default Container https://getbootstrap.com/docs/5.0/layout/containers/#default-container -->
+        <div class="container pt-5 pb-5">
+            <!-- Grid: https://getbootstrap.com/docs/5.0/layout/grid/ with vertical gutters https://getbootstrap.com/docs/5.0/layout/gutters/#vertical-gutters and responsive classes https://getbootstrap.com/docs/5.0/layout/grid/#responsive-classes -->
+            <div class="row gy-2">
+                <div class="col-sm">
+                    <!-- Component: https://getbootstrap.com/docs/5.0/components/card/#body -->
+                    <div class="card bg-primary">
+                        <div class="card-body text-center">First Card</div>
+                    </div>
+                </div>
+                <div class="col-sm"">
+                    <!-- Component: https://getbootstrap.com/docs/5.0/components/card/#body -->
+                    <div class="card bg-warning">
+                        <div class="card-body text-center">Second Card</div>
+                    </div>
+                </div>
+                <div class="col-sm"">
+                    <!-- Component: https://getbootstrap.com/docs/5.0/components/card/#body -->
+                    <div class="card bg-success">
+                        <div class="card-body text-center">Third Card</div>
+                    </div>
+                </div>
+                <div class="col-sm"">
+                    <!-- Component: https://getbootstrap.com/docs/5.0/components/card/#body -->
+                    <div class="card bg-danger">
+                        <div class="card-body text-center">Fourth Card</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Combination of Utility Classes e.g Text, Colors, Spacing-->
+        <!-- Fluid Container https://getbootstrap.com/docs/5.0/layout/containers/#fluid-containers -->
+        <footer class="container-fluid text-center bg-info p-3 mt-3">
+            Footer!
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
