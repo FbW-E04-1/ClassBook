@@ -1,0 +1,163 @@
+@import "_reset.scss";
+@import "_nav.scss";
+@import "_header.scss";
+
+$primaryColor: green;
+$secondaryColor: teal;
+
+$whiteColor: #fdfdfd;
+$pictureColor: red;
+
+body {
+  background: $pictureColor;
+}
+
+.main-bg {
+  background: $primaryColor;
+}
+
+h1 {
+  color: $primaryColor;
+}
+
+.main-nav {
+  background: $secondaryColor;
+  list-style-type: none;
+  display: flex;
+  li {
+    margin-left: 1.5rem;
+  }
+  a {
+    color: $whiteColor;
+    font-size: 1.25em;
+    text-decoration: none;
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}
+
+.box {
+  background: limegreen;
+  height: 100px;
+  width: 100px;
+  &.dark {
+    background: darkslategray;
+  }
+}
+
+.nav {
+  background: deeppink;
+  display: flex;
+  list-style-type: none;
+  padding: 1rem;
+  &-item {
+    background: $whiteColor;
+    border-radius: 16px;
+    margin-left: 1.5rem;
+    padding: 0.75rem;
+  }
+
+  &-link {
+    color: deeppink;
+    text-decoration: none;
+  }
+}
+
+/*
+.nav-item {
+  background: $whiteColor;
+  border-radius: 16px;
+  margin-left: 1.5rem;
+  padding: 0.75rem;
+}
+
+.nav-link {
+  color: deeppink;
+  text-decoration: none;
+}
+*/
+
+// .box.dark {
+//   background: darkslategray;
+// }
+
+/*
+	parent
+*/
+.main-nav {
+}
+.main-nav li {
+}
+.main-nav a {
+}
+.main-nav a:hover {
+}
+
+// .main-nav a {
+//   color: $whiteColor;
+//   font-size: 1.25em;
+//   text-decoration: none;
+// }
+
+@mixin myBox {
+  height: 100px;
+  width: 100px;
+}
+
+@mixin withBorder($width, $color) {
+  border: $width solid $color;
+  padding: 1.5rem;
+}
+
+
+.box-red {
+  @include withBorder(5px, yellow);
+  background: red;
+}
+.box-green {
+  background: green;
+}
+
+.text {
+  color: blue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5em;
+}
+
+.alert-text {
+  @extend .text;
+  background: red;
+  color: white;
+}
+
+.box {
+  background: tomato;
+  width: 100px;
+  height: 100px;
+}
+
+.blue-box {
+  @extend .box;
+  background: blue;
+}
+.green-box {
+  @extend .box;
+  background: green;
+}
+
+
+.another-box,
+.box {
+  @include myBox;
+  @include withBorder(3px, black);
+  background: tomato;
+}
+
+.yet-another-box {
+  @include myBox;
+}
+
+.yet-another-box-2 {
+  @include myBox;
+}

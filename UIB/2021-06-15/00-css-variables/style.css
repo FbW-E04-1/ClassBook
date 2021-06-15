@@ -1,0 +1,71 @@
+
+:root {
+  /* variable definitions, variable declarations, variable initialisations */
+
+  /* 
+	camel case:
+	primaryBackgroundColor
+
+	primary-background-color
+
+	primary_background_color
+	
+	*/
+  --primaryColor: #4c5270;
+  --secondaryColor: #f652a0;
+  --blackColor: #333333;
+  --whiteColor: #dfdfdf;
+  --padding: 1.5rem;
+  --headingsFont: Helvetica, Arial, sans-serif;
+  --bodyFont: Georgia, Times, "Times New Roman", serif;
+
+  --size: 1rem;
+  --size-1: calc(var(--size) * 1.25); /* 1.25 */
+  --size-2: calc(var(--size-1) * 1.25);
+  --size-3: calc(var(--size-2) * 1.25);
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: var(--whiteColor);
+  color: var(--padding);
+  font-family: var(--bodyFont);
+  font-size: var(--size);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--headingsFont);
+}
+
+h4 {
+  font-size: var(--size-2);
+}
+
+.bg-main {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  padding: var(--padding);
+}
+
+p {
+  margin: var(--margin);
+}
+
+ul,
+ol {
+  margin: var(--margin);
+}
+
+section {
+  --sectionColor: limegreen;
+  margin: 1.75rem;
+  /* ... */
+}

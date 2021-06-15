@@ -4,6 +4,10 @@
 
 ## Topics
 
+## Lesson
+
+[Video recording](https://drive.google.com/file/d/1ubPSo3C1Uydxazx3DkgJJzENSTt46dkT/view?usp=sharing)
+
 ## Grid properties
 
 ### Grid container
