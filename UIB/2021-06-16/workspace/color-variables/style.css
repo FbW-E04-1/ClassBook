@@ -1,0 +1,29 @@
+/* here the variable $parimaryColor doesn't exist */
+/* here $primaryColor is still "tomato" */
+/* 
+
+here we check if $primaryColor already has a value:
+
+- if it does, we  use the existing value from above (tomato)
+- otherwise, we set it to "limegreen"
+
+*/
+.box {
+  height: 100px;
+  margin-bottom: 1.5rem;
+  width: 100px;
+}
+
+.box-1 {
+  background-color: tomato;
+}
+
+/* 
+  This variable by default will be set to "limegreen", unless
+  the same variable is defined above with a different value
+*/
+.box-2 {
+  background-color: limegreen;
+}
+
+/*# sourceMappingURL=style.css.map */
