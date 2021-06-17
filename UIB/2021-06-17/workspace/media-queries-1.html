@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        if the viewport is smaller than 600px, do something
+        - hide an element
+        - move an element to a new position
+        - change the color of an element
+
+    */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      /* 
+        max-width: 500px (until 500px, if the viewport is smaller/equal than 500px)
+        min-width: 600px      (from 600px, if the viewport is bigger than 600px, is at least 600px)
+        
+    */
+      /* Make the background-color tomato from 700px on */
+      /* @media (min-width: 700px) {
+          body {
+              background-color: tomato;
+          }
+      } */
+
+      /* 
+            min-width                                  max-width
+    0px .......................|500px tomato 600px|..................
+    */
+      /* Make the background-color tomato when the viewport is between 500px and 600px */
+      /* @media (min-width: 500px) and (max-width: 600px) {
+        body {
+          background-color: tomato;
+        }
+      } */
+
+      /* 
+    0px .......................|500px tomato 600px|..................
+    We need a number that is bigger than 600 and smaller than 500
+    */
+
+      /*This is not a correct condition, because it's impossible */
+      /* @media (min-width: 600px) and (max-width: 500px) {
+        body {
+          background-color: tomato;
+        }
+      } */
+
+      /* 
+
+
+Separating the 2 conditions with a comma, we are telling the browser to make 
+the background tomato if at least 1 of the 2 conditions is valid (true).
+
+- if the viewport is bigger than 600px
+
+OR
+
+- if the viewport is smaller than 500px
+
+We are basically excluding an area in between 2 other areas
+
+    0px tomato     500px|.......|600px  tomato
+    */
+      /* @media (max-width: 500px), (min-width: 600px) {
+        body {
+          background-color: tomato;
+        }
+      }
+
+      @media (min-width: 700px) {
+        body {
+          font-size: 1.5rem;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+      accusantium laboriosam laudantium incidunt? Vel numquam, accusamus aliquam
+      recusandae corporis quis veritatis quia neque doloribus provident!
+      Doloribus dicta eos ex veniam? Cum quidem omnis similique? Dolores
+      repudiandae corrupti atque voluptates nisi ab eius molestias, explicabo
+      nihil sit facere illo non expedita labore optio mollitia ipsum recusandae
+      itaque ex magni. Voluptas, sunt! Dolorum aliquam velit asperiores libero
+      itaque fugiat inventore incidunt reiciendis. Numquam laboriosam odio velit
+      dolores a obcaecati assumenda ullam, dolor provident tenetur. Esse
+      repellendus facilis fugiat repellat non ducimus et. Accusamus nulla veniam
+      minus. At dicta ratione harum in error quaerat saepe cum est eum fuga?
+      Perspiciatis assumenda odit, repellendus harum, dolor expedita delectus
+      autem mollitia et, ipsum officiis commodi? Repudiandae quibusdam accusamus
+      maxime. Vero debitis officiis ea. Consequatur consectetur excepturi
+      voluptas facilis iusto nihil sint natus placeat illum, sunt temporibus
+      dolor, nobis id, earum dolore! Vero voluptatem nihil itaque! Velit iure
+      reprehenderit vitae temporibus repudiandae rerum ipsum. Assumenda ducimus
+      at mollitia saepe, voluptate corporis hic. Delectus optio, obcaecati
+      consequuntur ullam aspernatur fugiat sapiente, tempora quia, a repudiandae
+      ut ipsa. Dolor sunt natus provident sint dignissimos enim est excepturi
+      dolores dolorem, voluptatum rerum fuga ratione, eos, molestias iure.
+      Officia cupiditate ipsam distinctio soluta. Architecto optio omnis odio
+      tenetur natus nemo! Fuga aut quo corrupti, esse porro iure. Aperiam
+      tempora quidem ad labore qui! Totam, quidem voluptatibus modi autem
+      tenetur laudantium quaerat laborum, exercitationem inventore facilis minus
+      voluptas. Ex, exercitationem magnam? Repudiandae officiis vero expedita
+      sunt impedit necessitatibus, ducimus rerum. Optio necessitatibus nesciunt
+      eaque ullam nam, tempora cumque voluptas excepturi, ut esse totam nostrum
+      repudiandae, harum nulla aut sint consequatur non? Obcaecati quos
+      perferendis repellendus non dolores sapiente odit tenetur aut possimus
+      quibusdam? Molestiae, voluptatem nam repudiandae odio eos aliquam nemo
+      consectetur recusandae. Culpa molestias veritatis, nobis nostrum
+      recusandae accusamus. Ipsam! A, cupiditate magnam consequatur, ratione
+      dolorem assumenda voluptatum facere, nihil minus obcaecati doloribus
+      necessitatibus. Quo eos facere quae dolorem adipisci rerum iusto,
+      explicabo blanditiis accusantium inventore hic, temporibus assumenda odit.
+      Accusamus mollitia saepe recusandae quia, doloribus libero unde similique
+      beatae dolorum non officia eligendi ad tempora porro consectetur nisi
+      nulla qui corporis nostrum blanditiis voluptatibus molestiae laudantium
+      inventore! Esse, perferendis. Sapiente dolore molestiae eum ullam suscipit
+      eligendi aperiam omnis eius quae, corporis quod et itaque voluptatum fuga
+      sequi neque error accusantium aliquid dolorem tempore tenetur obcaecati
+      sunt perspiciatis. Cum, esse. Sapiente aperiam unde quisquam non iusto ex
+      qui accusamus a dolorem laborum, inventore officia rem mollitia deleniti
+      nesciunt maxime commodi eius laudantium. Distinctio itaque temporibus
+      atque similique debitis ipsam assumenda. Quo itaque, aliquam consequatur
+      suscipit alias provident libero sapiente tempore corrupti aliquid ipsum
+      natus eius quas eum nemo! Maiores repellendus distinctio optio ipsum quod
+      nesciunt libero. Recusandae ea itaque corporis. Necessitatibus architecto
+      dolor error sapiente magnam numquam culpa amet, officia quo voluptates
+      molestias natus! Iste molestiae sapiente nesciunt repellat optio
+      reiciendis blanditiis rerum! Voluptate quis necessitatibus molestiae
+      illum, rerum consequatur! Accusantium soluta dolore consequuntur
+      temporibus itaque aliquam error quam sint, ut natus. Iste quos illum
+      voluptatibus enim accusamus consequatur nostrum odio, esse voluptatum
+      repellat distinctio doloremque fuga dolorem. Amet, nisi! Modi commodi
+      velit porro ipsum qui veritatis, corporis fugiat, voluptatibus soluta
+      debitis beatae architecto alias ab, sed in accusamus? Aliquid esse nam
+      amet sapiente, nobis doloremque sed fugit explicabo deserunt? Rem aperiam
+      consequuntur recusandae minus sunt nihil sapiente praesentium unde sed
+      velit. Cum sint, officia id minus iusto vitae excepturi possimus. Quos,
+      similique harum blanditiis deleniti nihil facilis dicta velit! At cumque,
+      impedit suscipit atque labore quos, nisi iusto sequi autem voluptatem
+      dolores voluptatibus excepturi! Expedita accusantium cupiditate sed
+      laboriosam excepturi repudiandae eos mollitia, ullam obcaecati est tenetur
+      dolore dolor.
+    </p>
+  </body>
+</html>

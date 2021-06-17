@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+      }
+      header {
+        align-items: center;
+        background: tomato;
+        display: flex;
+        padding: 1.5rem;
+      }
+
+      a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .nav {
+        display: flex;
+        list-style-type: none;
+      }
+
+      .nav li {
+        background: white;
+        border-radius: 16px;
+        margin-left: 0.75rem;
+        padding: 0.75rem;
+      }
+
+      .hamburger-menu-button {
+        display: none;
+        /* push the element to the right */
+        margin-left: auto;
+      }
+
+      /* breakpoint: 920px */
+      @media (max-width: 920px) {
+        /* header {
+              justify-content: space-between;
+          } */
+
+        .nav {
+          display: none;
+        }
+
+        .hamburger-menu-button {
+          display: block;
+        }
+      }
+
+      /* TODO: 
+        Replicate this same behaviour using media queries with min-width instead of max-width
+      */
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Beautiful logo</h1>
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Something</a></li>
+        <li><a href="#">Bla bla</a></li>
+        <li><a href="#">Something else</a></li>
+      </ul>
+      <button class="hamburger-menu-button">Menu</button>
+    </header>
+  </body>
+</html>

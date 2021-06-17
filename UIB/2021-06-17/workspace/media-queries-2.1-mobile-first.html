@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        border: 1px solid tomato;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 1.5rem;
+      }
+      p {
+        /* display: none; */
+      }
+      img {
+        /* hide the image by default */
+        display: none;
+        margin-right: 1.5rem;
+        width: 300px;
+      }
+      @media (min-width: 700px) {
+        .container {
+          display: flex;
+        }
+        img {
+          /* override the display: none; property to make the img visible again */
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="giraffe.jpg" />
+      <div>
+        <h2>My very long title</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident
+          odit quidem alias totam rem pariatur accusamus consequuntur a, in
+          corporis accusantium ab assumenda praesentium! Quisquam aperiam
+          incidunt debitis commodi soluta. Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Nostrum odio, neque doloribus nobis at
+          vitae in vel totam, dicta laudantium ipsum culpa magni! Labore fuga,
+          corporis fugiat animi maxime nesciunt.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
