@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        background-size:
+        contain: the whole image is always entirely visible
+        cover: the background occupies the whole container, 
+        but we don't see the whole image 
+        */
+      * {
+        box-sizing: border-box;
+      }
+
+      .background-picture {
+        background-image: url("./city.jpg");
+        background-position: 100px 50%;
+        background-size: cover;
+        /* filter: blur(4px); */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 300px;
+        width: 400px;
+      }
+
+      .vertical {
+        border: 1px solid black;
+        background-image: url("./vertical.jpg");
+        background-position: 70%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 500px;
+        width: 300px;
+      }
+      .container {
+          display: flex;
+          flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="background-picture">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error mollitia
+      odio repellendus quod quasi repudiandae eveniet laborum. In voluptas et
+      quod aliquid voluptatem aliquam a dignissimos cupiditate culpa, hic
+      dolorem!
+    </div>
+    <div class="vertical"></div> -->
+    <div class="container">
+      <div class="background-picture"></div>
+      <div class="vertical"></div>
+      <div class="vertical"></div>
+      <div class="background-picture"></div>
+      <div class="background-picture"></div>
+      <div class="vertical"></div>
+      <div class="vertical"></div>
+      <div class="background-picture"></div>
+      <div class="background-picture"></div>
+      <div class="vertical"></div>
+      <div class="vertical"></div>
+      <div class="background-picture"></div>
+      <div class="background-picture"></div>
+      <div class="vertical"></div>
+      <div class="vertical"></div>
+      <div class="background-picture"></div>
+      <div class="background-picture"></div>
+      <div class="vertical"></div>
+      <div class="vertical"></div>
+      <div class="background-picture"></div>
+      <div class="background-picture"></div>
+      <div class="vertical"></div>
+    </div>
+  </body>
+</html>

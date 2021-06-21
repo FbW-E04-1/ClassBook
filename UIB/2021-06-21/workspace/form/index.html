@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: none;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+} */
+      label {
+        display: block;
+      }
+
+      /*
+      :focus
+
+      :valid
+      :invalid
+      */
+
+      /* input:hover {
+        outline: 3px solid teal;
+      } */
+      input:focus {
+        outline: 3px solid tomato;
+      }
+
+      input[type="text"]:valid {
+        outline: 3px solid green;
+      }
+      input:invalid {
+        outline: 3px solid red;
+      }
+
+      fieldset {
+          border: none;
+          padding: 0;
+      }
+
+      legend {
+          padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="first-name">First name</label>
+      <input
+        minlength="3"
+        maxlength="10"
+        autofocus
+        required
+        name="first-name"
+        id="first-name"
+        placeholder="e.g. John"
+        type="text"
+      />
+      <label for="last-name">Last name</label>
+      <input
+        required
+        name="last-name"
+        id="last-name"
+        placeholder="e.g. smith"
+        type="text"
+      />
+      <label>Email</label>
+      <input
+        required
+        name="email"
+        placeholder="example@mail.com"
+        type="email"
+      />
+      <label>Number</label>
+      <input type="number" />
+      <label>Birthday</label>
+      <input type="date" />
+
+      <label>Age range</label>
+      <select>
+        <option selected disabled>-</option>
+        <option>10 - 17</option>
+        <option>18 - 25</option>
+        <option>older than 25</option>
+      </select>
+      <label>Description</label>
+      <textarea
+        maxlength="20"
+        cols="20"
+        rows="10"
+        placeholder="write something..."
+      ></textarea>
+      <div>
+        <input type="submit" />
+      </div>
+
+      <input type="range" min="0" max="100" step="1">
+      <fieldset>
+        <legend>Favourite color</legend>
+        <label> <input type="radio" name="color" /> Red</label>
+        <label><input checked type="radio" name="color" /> Green</label>
+        <label><input type="radio" name="color" /> Blue</label>
+      </fieldset>
+      <!-- <input type="button" value="Submit">
+      <button>Submit</button> -->
+    </form>
+  </body>
+</html>

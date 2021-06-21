@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        position
+
+        An element is said to be `positioned` when has a position value different than `static`
+
+        - static (default) - every element by default is static, it means it's not positioned
+
+        - relative - positions the element in relation to itself, from its original position
+        - absolute 
+        - fixed 
+        - sticky 
+
+        A positioned element can make use of new properties:
+
+        - top
+        - bottom
+        - right
+        - left
+
+        - z-index
+        */
+      * {
+        box-sizing: border-box;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+        margin: 1.5rem;
+      }
+
+      .container {
+        border: 5px solid yellowgreen;
+      }
+
+      .container-relative,
+      .relative {
+        position: relative;
+      }
+
+      .relative {
+        background-color: tomato;
+        top: 100px;
+      }
+
+      .absolute {
+        background-color: plum;
+        position: absolute;
+        top: 100px;
+      }
+
+      .container-2 {
+        border: 5px solid blue;
+      }
+
+      .box-4 {
+        right: 0;
+      }
+      .box-5 {
+        bottom: 0;
+      }
+      .box-6 {
+        left: 200px;
+        top: 200px;
+      }
+      .fixed {
+        background-color: mediumseagreen;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+      }
+
+      .sticky {
+        background-color: mediumvioletred;
+        position: sticky;
+        top: 50px;
+      }
+
+      .contains-sticky {
+          border: 5px solid black;
+          height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fixed">nav bar</div>
+    <div class="container">
+      <div class="box box-1 relative">1</div>
+      <div class="box box-2 relative">2</div>
+      <div class="box box-3 relative">3</div>
+    </div>
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus
+    culpa cumque illum architecto cum nisi eaque ipsum eos magnam aliquid, earum
+    non repudiandae veritatis? Repudiandae corrupti voluptas debitis nulla
+    officia! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Necessitatibus culpa cumque illum architecto cum nisi eaque ipsum eos magnam
+    aliquid, earum non repudiandae veritatis? Repudiandae corrupti voluptas
+    debitis nulla officia! Lorem ipsum dolor sit amet, consectetur adipisicing
+    elit. Necessitatibus culpa cumque illum architecto cum nisi eaque ipsum eos
+    magnam aliquid, earum non repudiandae veritatis? Repudiandae corrupti
+    voluptas debitis nulla officia!
+    <div class="contains-sticky">
+      <div class="box sticky">sticky</div>
+    </div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus
+    culpa cumque illum architecto cum nisi eaque ipsum eos magnam aliquid, earum
+    non repudiandae veritatis? Repudiandae corrupti voluptas debitis nulla
+    officia! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Necessitatibus culpa cumque illum architecto cum nisi eaque ipsum eos magnam
+    aliquid, earum non repudiandae veritatis? Repudiandae corrupti voluptas
+    debitis nulla officia! Lorem ipsum dolor sit amet, consectetur adipisicing
+    elit. Necessitatibus culpa cumque illum architecto cum nisi eaque ipsum eos
+    magnam aliquid, earum non repudiandae veritatis? Repudiandae corrupti
+    voluptas debitis nulla officia! Lorem ipsum dolor sit amet, consectetur
+    adipisicing elit. Necessitatibus culpa cumque illum architecto cum nisi
+    eaque ipsum eos magnam aliquid, earum non repudiandae veritatis? Repudiandae
+    corrupti voluptas debitis nulla officia! Lorem ipsum dolor sit amet,
+    consectetur adipisicing elit. Necessitatibus culpa cumque illum architecto
+    cum nisi eaque ipsum eos magnam aliquid, earum non repudiandae veritatis?
+    Repudiandae corrupti voluptas debitis nulla officia! Lorem ipsum dolor sit
+    amet, consectetur adipisicing elit. Necessitatibus culpa cumque illum
+    architecto cum nisi eaque ipsum eos magnam aliquid, earum non repudiandae
+    veritatis? Repudiandae corrupti voluptas debitis nulla officia! Lorem ipsum
+    dolor sit amet, consectetur adipisicing elit. Necessitatibus culpa cumque
+    illum architecto cum nisi eaque ipsum eos magnam aliquid, earum non
+    repudiandae veritatis? Repudiandae corrupti voluptas debitis nulla officia!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus
+    culpa cumque illum architecto cum nisi eaque ipsum eos magnam aliquid, earum
+    non repudiandae veritatis? Repudiandae corrupti voluptas debitis nulla
+    officia! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Necessitatibus culpa cumque illum architecto cum nisi eaque ipsum eos magnam
+    aliquid, earum non repudiandae veritatis? Repudiandae corrupti voluptas
+    debitis nulla officia!
+    <!-- <div class="box absolute">absolute</div> -->
+
+    <div class="container container-relative container-2"></div>
+
+    <div class="container container-relative container-2">
+      <div class="box relative">relative</div>
+      <div class="box absolute box-4">absolute</div>
+      <div class="box absolute box-5">absolute</div>
+      <div class="box absolute box-6">absolute</div>
+    </div>
+  </body>
+</html>
