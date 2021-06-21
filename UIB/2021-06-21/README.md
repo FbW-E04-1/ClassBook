@@ -20,7 +20,7 @@
 
 ## Lesson
 
-[Video recording]()
+[Video recording](https://drive.google.com/file/d/1GKHrtiXPyLrA0UJmFBFEbk-eZYNP7cu4/view?usp=sharing)
 
 ### Notes
 
