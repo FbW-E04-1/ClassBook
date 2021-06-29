@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        background-color: tomato;
+      }
+
+      nav ul {
+        list-style-type: none;
+        display: flex;
+        padding: 1.5rem;
+      }
+
+      ul li:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+      /* ul li {
+        margin-left: 1.5rem;
+      }
+
+      ul li:first-child {
+        margin-left: 0;
+      } */
+
+      .hero {
+        background-image: url("hero.jpg");
+        background-size: cover;
+        height: 100vh;
+        padding: 1.5rem;
+      }
+
+      .container {
+        padding: 0 1.5rem;
+        /*
+         margin-top and margin-bottom are set to 0
+         margin-left and margin-right are set to auto
+
+        Setting both margin-left and margin-right to auto
+        is a way of centering block elements
+        */
+        margin: 0 auto;
+        max-width: 960px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero">
+        <h1>Hello</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam
+          quam architecto quas blanditiis, accusantium sint? Sapiente, impedit
+          perspiciatis distinctio, fugiat dignissimos nam, cumque suscipit
+          dolorem reprehenderit aspernatur vero amet eaque.
+        </p>
+      </div>
+
+      <section class="about">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
+          adipisci sequi, officiis suscipit repellendus, enim quisquam
+          voluptatibus esse dolores hic ipsam ex aspernatur fugit dolor
+          mollitia! Hic tempore aliquam earum! Facilis eum tempora dolorem quasi
+          iste, non optio nostrum explicabo consequuntur. Esse rem dignissimos
+          dolor voluptate! Quas quibusdam reiciendis nemo similique obcaecati,
+          atque totam natus aspernatur odio porro quisquam fuga! Optio modi
+          obcaecati, dolorum accusamus, iusto fuga cumque adipisci odit
+          consectetur officiis sequi ullam deserunt voluptatum eaque numquam
+          dolorem hic perspiciatis sed harum qui. Dolorem pariatur quibusdam
+          consequuntur vitae explicabo! Ducimus veniam fugit beatae ullam
+          voluptates eius fuga expedita rem, quam accusantium illo ad excepturi
+          repudiandae labore saepe voluptatum voluptate quia! Nulla sint
+          mollitia voluptatibus nobis saepe autem omnis atque? Ad enim dolore
+          animi, exercitationem sequi amet perspiciatis dolores soluta
+          distinctio, quo laudantium ipsum provident quam iure inventore non
+          recusandae dignissimos molestiae minus. Fugit perferendis neque
+          quaerat totam mollitia aliquam!
+        </p>
+      </section>
+      <section class="work">
+        <h2>Work</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+          architecto! Quis reiciendis saepe tempora atque sapiente rem
+          voluptates ad alias modi eveniet at, repudiandae nobis reprehenderit,
+          corrupti suscipit quam debitis.
+        </p>
+      </section>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>

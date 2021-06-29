@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .container {
+        /* display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+        /* justify-items: center; */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .list-item {
+        flex-grow: 1;
+        width: 200px;
+      }
+
+      .img-wrapper {
+        height: 150px;
+      }
+      .img {
+        border-radius: 50%;
+        object-fit: cover;
+        height: 150px;
+        width: 150px;
+      }
+
+      .align-top {
+        object-position: top;
+      }
+
+      h2 {
+        border: 1px solid tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="container">
+      <li class="list-item">
+        <img class="img" src="alpaca-horizontal.jpg" />
+        <h2>Alpaca</h2>
+      </li>
+      <li class="list-item">
+        <img class="img align-top" src="alpaca-vertical.jpg" />
+        <h2>Flamingo</h2>
+      </li>
+      <li class="list-item">
+        <img class="img" src="cat.jpg" />
+        <h2>Cat</h2>
+      </li>
+      <li class="list-item">
+        <img class="img" src="dog-2.jpg" />
+      </li>
+      <li class="list-item">
+        <img class="img" src="dog.jpg" />
+      </li>
+      <li class="list-item"><img class="img" src="leopard.jpg" /></li>
+    </ul>
+  </body>
+</html>

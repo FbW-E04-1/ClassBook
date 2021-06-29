@@ -1,4 +1,9 @@
+- [ ] object-fit
+- [ ] container, centered column, full width
+- [ ] tarnsform / translate
+- [ ] centering elements with translate 
 - [ ] transition 
 - [ ] animation
-- [ ] container, centered column, full width
 - [ ] flexbox
+- [ ] custom input elements (checkbox, radio button)
+    - https://codepen.io/daviddarnes/pen/LdGYVG

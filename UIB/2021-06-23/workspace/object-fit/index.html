@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      img {
+        width: 400px;
+      }
+
+      .img-horizontal {
+        /* width: 50%; */
+        /* width: 600px;
+            height: 400px; */
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border: 1px solid tomato;
+      }
+
+      .img-vertical {
+          height: 400px;
+          width: 400px;
+          object-fit: cover;
+          object-position: center;
+      }
+      .alpaca-background {
+        background-image: url(alpaca-horizontal.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid tomato;
+        height: 300px;
+        width: 300px;
+      }
+
+      /* 
+        width: 400
+        height: 200
+
+        width: 200
+        height: 100
+
+        width: 300
+        height: 150
+
+        width: 100
+        height: 100
+*/
+    </style>
+  </head>
+  <body>
+    <div class="alpaca-background"></div>
+
+    <img class="img-horizontal" src="alpaca-horizontal.jpg" />
+    <img class="img-vertical" src="alpaca-vertical.jpg" />
+  </body>
+</html>

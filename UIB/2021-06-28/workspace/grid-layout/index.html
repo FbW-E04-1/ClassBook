@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        border: 5px solid teal;
+        display: grid;
+        /* height: 500px; */
+        gap: 1.5rem;
+        /* grid-gap: 1.5rem; */
+        /* overflow: auto; */
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* */
+        /* grid-template-columns: 1fr 2fr 1fr; */
+        grid-template-columns: 150px 1fr 150px;
+        grid-template-rows: 150px 1fr 150px;
+      }
+
+      .box {
+        background-color: tomato;
+        border: 3px solid black;
+        /* height: 100px; */
+        /* width: 100px; */
+        display: grid;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* 
+grid-row
+grid-column
+
+grid-area
+*/
+      .nav {
+        /* grid-column: 1 / -1; */
+        grid-column: span 3;
+        grid-row: 1;
+      }
+      .sidebar {
+        grid-row: 2;
+      }
+      .content {
+        grid-column: 2 / 4;
+        grid-row: 2;
+        /* grid-column: span 2; */
+      }
+
+      .footer {
+          grid-column: 1 / -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box nav">nav</div>
+      <div class="box sidebar">sidebar</div>
+      <div class="box content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique iusto amet eligendi quidem laudantium repudiandae quos quas qui cupiditate ad, modi repellendus nobis dolore tempore dolores, explicabo dignissimos provident sit.
+      Quasi quas tenetur nam, sunt amet reprehenderit, voluptatibus, nisi rerum repellendus soluta maiores distinctio voluptatem excepturi? Amet eius sunt dolorum quod vitae accusamus, esse, quibusdam incidunt qui fugiat dolore mollitia!
+      Maiores consectetur aspernatur necessitatibus, natus at distinctio. Similique modi et aspernatur, possimus corporis nisi optio quam provident cumque porro illo tempore consequatur incidunt quas atque distinctio. Natus aliquam repudiandae veniam.
+      Id minima nemo quidem corrupti beatae quibusdam? Deserunt commodi praesentium voluptatem facere eius, officia iusto sunt aliquam? Provident accusantium repellendus vel, ab, nobis error optio fugit exercitationem esse et culpa!
+      Omnis placeat dicta quisquam. Modi officiis, eveniet maxime ex, iste ipsa aliquid beatae necessitatibus corrupti fugiat deserunt vel fuga! Quis tempore ratione quidem corporis officiis labore omnis laudantium eaque quos.
+      Alias minima ex dolor, nostrum doloribus exercitationem accusamus at officiis a similique aliquam facere architecto, molestiae illo impedit repellat nemo vel quibusdam, voluptate est? Porro incidunt qui ex earum saepe.
+      Reprehenderit, commodi! Eaque quo delectus repellat cum labore hic. Quae, doloremque. Optio consectetur recusandae dicta, animi dignissimos quidem commodi dolor tenetur non veritatis necessitatibus ducimus. Aliquam soluta dolor saepe eligendi?
+      Necessitatibus explicabo vitae deleniti perspiciatis, nulla laudantium atque, reiciendis sit nesciunt, inventore dicta enim eaque consequuntur obcaecati repellendus ad eveniet voluptas ipsa at molestiae. Iusto itaque pariatur est soluta harum.
+      Doloremque reiciendis ullam similique rerum amet dolor ab quos aspernatur earum facere assumenda eos, magni voluptates optio necessitatibus! Nobis deserunt, eaque architecto animi esse sed blanditiis sequi delectus facere natus.
+      Doloribus provident quia omnis nisi ab illo debitis, reprehenderit optio quod temporibus eum incidunt eveniet est eligendi iure quam recusandae? Voluptatibus maxime porro, repudiandae eos optio est vitae nesciunt asperiores.</div>
+      <div class="box footer">footer</div>
+    </div>
+  </body>
+</html>
