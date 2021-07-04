@@ -12,6 +12,8 @@
 
 ## Lesson
 
+- [Video recording](https://drive.google.com/file/d/1prbhNgEcY3w7DgOWg27ZOBq2L8aEbqZ-/view?usp=sharing)
+
 ## Resources
 
 - [GitHub pages](https://pages.github.com/) - short guide from GitHub
