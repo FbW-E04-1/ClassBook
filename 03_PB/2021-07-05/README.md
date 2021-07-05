@@ -20,6 +20,17 @@
 - [x] Variable reassignment: `=`, `+=`, `-=`, string accumulation
 - [x] Increment operator: `++`, `--`
 
+## Variable assignment
+
+```
+let x = 10;
+let y = x;
+let x = 0;
+```
+
+![](./images/assign-step1.gif)
+![](./images/assign-step2.gif)
+![](./images/assign-step3.gif)
 
 ## Lesson
 - [Video recording](https://drive.google.com/file/d/1jhpbFdPvoeOn_qWw3V6Uk-yEzJCFjqF_/view?usp=sharing)
