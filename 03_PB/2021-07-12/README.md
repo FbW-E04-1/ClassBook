@@ -43,6 +43,8 @@
 
 ## Resources
 
+- [Array](https://javascript.info/array) - JavaScript.info page
+- [Array methods](https://javascript.info/array-methods) - JavaScript.info page
 - [Data Structures: Objects and Arrays](https://eloquentjavascript.net/04_data.html) - EloquentJS chapter 4
 - [Array.prototype.splice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) - MDN
 - [Array.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) - MDN
