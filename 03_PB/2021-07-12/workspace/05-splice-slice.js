@@ -102,3 +102,8 @@ console.log(instruments);
 
 let letters = ["a", "b", "c", "d"];
 console.log(letters.slice(0, 2));
+
+
+let text = "Hello world";
+
+console.log(text.split("").reverse().join(""));
