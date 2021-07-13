@@ -11,7 +11,7 @@
 ## Lesson
 
 - [Slides](../slides/2021-07-13%20-%20algorithms%20and%20conditions.pdf)
-- [Video recording]()
+- [Video recording](https://drive.google.com/file/d/1wbGFKu_M6R15Dl8jN5GY2VrNnlCOSUpZ/view?usp=sharing)
 
 ### Notes
 - 9:10 Recap - Arrays
