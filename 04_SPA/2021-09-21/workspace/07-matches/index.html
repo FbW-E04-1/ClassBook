@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li class="list-item list-item-1 active">home</li>
+      <li class="list-item list-item-2 active">about</li>
+      <li class="list-item list-item-3">contact</li>
+      <li class="list-item list-item-4 active">work</li>
+    </ul>
+
+    <script>
+      let listItems = document.querySelectorAll(".list-item");
+      let listItem1 = document.querySelector(".list-item-1");
+
+      if (listItem1.matches('div')) {
+          console.log('item 1 is active');
+      }
+      for (let item of listItems) {
+        if (item.matches(".list-item")) {
+          item.style.backgroundColor = "tomato";
+        }
+      }
+    </script>
+  </body>
+</html>

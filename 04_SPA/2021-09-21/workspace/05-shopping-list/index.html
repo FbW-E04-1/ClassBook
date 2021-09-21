@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>My shopping list</h1>
+
+    <a id="link" href="http://example.com">empty link</a>
+
+    <form id="my-form">
+      <input id="text" type="text" />
+      <button id="add">Add to list</button>
+    </form>
+
+    <ul class="shopping-list"></ul>
+
+    <script>
+      let linkElement = document.getElementById("link");
+
+      //   linkElement.addEventListener("click", (event) => {
+      //     event.preventDefault();
+      //   });
+
+      let addButton = document.getElementById("add");
+      let inputElement = document.getElementById("text");
+      let shoppingList = document.querySelector(".shopping-list");
+      let formElement = document.getElementById("my-form");
+
+      inputElement.style.backgroundColor = "tomato";
+
+      formElement.addEventListener("submit", (event) => {
+        event.preventDefault();
+        console.log(event);
+      });
+
+      addButton.addEventListener("click", (event) => {
+        let newItem = inputElement.value;
+
+        if (newItem === "") {
+          return;
+        }
+
+        console.log(newItem);
+        let listItem = document.createElement("li");
+        listItem.textContent = newItem;
+        shoppingList.appendChild(listItem);
+        inputElement.value = "";
+      });
+    </script>
+  </body>
+</html>

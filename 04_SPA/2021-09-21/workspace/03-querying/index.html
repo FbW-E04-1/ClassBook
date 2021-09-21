@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="my-list">
+      <li class="list-item">list item 1</li>
+      <li class="list-item">list item 2</li>
+      <li class="list-item">list item 3</li>
+      <li class="list-item">list item 4</li>
+      <li class="list-item">list item 5</li>
+    </ul>
+
+    <button class="my-button">change text color</button>
+    <script>
+      let button = document.querySelector(".my-button");
+      let listItems = document.querySelectorAll(".list-item");
+
+      button.addEventListener("click", () => {
+        listItems.forEach((item) => {
+          item.style.color = "yellowgreen";
+        });
+      });
+      //   let listItem = document.querySelector(".list-item");
+      //   listItem.style.backgroundColor = "tomato";
+
+      //   let listItems = document.querySelectorAll(".list-item");
+      //   console.log(listItems);
+      //   listItems[0].style.backgroundColor = "teal";
+
+      // //   listItems.forEach((item) => {
+      // //     item.style.backgroundColor = "teal";
+      // //   });
+
+      listItems.forEach((item) => {
+        item.style.backgroundColor = "teal";
+      });
+
+      //   for (let item of listItems) {
+      //     item.style.backgroundColor = "teal";
+      //   }
+    </script>
+  </body>
+</html>

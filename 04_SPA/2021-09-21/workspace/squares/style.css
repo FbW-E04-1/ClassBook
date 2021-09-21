@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+#main {
+  min-height: 100%;
+  padding-left: 8.3rem;
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+}
+
+.buttons {
+  background: #c851c4;
+  height: 100%;
+  left: 0;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+button {
+  border-radius: 0;
+  border: 3px solid;
+  background: none;
+  cursor: pointer;
+  font-size: 1.15em;
+  padding: 0.5em 1.5em;
+  position: relative;
+}
+button::before {
+  background: white;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 5px;
+  position: absolute;
+  top: -5px;
+  width: 100%;
+  transition: all 0.15s ease-in;
+  z-index: -1;
+}
+
+button:hover::before {
+  left: 0;
+  top: 0;
+}
+
+.buttons ul {
+  list-style-type: none;
+  padding: 0;
+}
+.buttons ul > * + * {
+  margin-top: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.cell {
+  background: var(--bg-color);
+  height: 100px;
+  transition: all 0.25s ease-in;
+  /* width: 100px; */
+}
+
+.cats {
+  position: relative;
+}
+.cat {
+  position: absolute;
+  left: var(--left);
+  top: var(--top);
+  transform: rotate(var(--rotate)) scale(var(--scale));
+}
+
+.cards {
+  display: grid;
+  grid-gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 32px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid;
+  border-radius: 15px;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.card figure {
+  height: 200px;
+  margin: 0;
+  position: relative;
+}
+
+.card figure h2 {
+  align-items: flex-end;
+  background: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+  color: white;
+  display: flex;
+  font-weight: bold;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.card .content {
+  padding: 1rem;
+}
+
+.card img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}

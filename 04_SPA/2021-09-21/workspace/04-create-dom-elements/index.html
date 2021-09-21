@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background-color: tomato;
+        height: 100px;
+        margin: 1.5rem;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    </div>
+    <script>
+      let containerElement = document.querySelector(".container");
+      let paragraph = document.createElement("p");
+      paragraph.textContent = "paragraph";
+
+      let boxes = [];
+      for (let i = 0; i < 5; i++) {
+        let box = document.createElement("div");
+        box.classList.add("box");
+        containerElement.appendChild(box);
+        boxes.push(box);
+      }
+      boxes[2].style.backgroundColor = "teal";
+      boxes[1].after(paragraph);
+
+      //   let titleElement = document.createElement("h1");
+      //   console.log(titleElement);
+      // document.body.style.backgroundColor = "tomato";
+      //   document.body.appendChild(titleElement);
+      //   titleElement.textContent = "My title";
+    </script>
+  </body>
+</html>

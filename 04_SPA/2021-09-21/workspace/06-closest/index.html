@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .item {
+      }
+      .container {
+      }
+      .container .item {
+      }
+
+      .container li.item {
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>list item 1</li>
+      <li class="list-item">list item 2</li>
+      <li class="list-item-3">
+        This list item contains a span:
+        <div class="div-1">
+          inside div 1
+          <div class="div-2">
+            inside div 2
+            <span class="my-span">list item 3</span>
+          </div>
+        </div>
+      </li>
+      <li class="list-item">list item 4</li>
+    </ul>
+
+    <script>
+      let spanElement = document.querySelector(".my-span");
+      console.log(spanElement);
+      spanElement.closest(".div-1").style.backgroundColor = "tomato";
+
+      let listItem3 = document.querySelector('.list-item-3');
+      listItem3.closest(".list-item").style.backgroundColor = "teal";
+
+    </script>
+  </body>
+</html>

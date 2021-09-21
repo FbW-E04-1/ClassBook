@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container::after {
+        background: tomato;
+        content: "aaa";
+        display: block;
+        height: 10px;
+        width: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container">
+        <p
+      <p>Paragraph</p>
+
+      This is a text node
+    </div> -->
+    <div class="container">
+      <ul class="list">
+        <li>list element 1</li>
+        <li class="li-2">list element 2</li>
+        <li>list element 3</li>
+        <li>list element 4</li>
+        <li>list element 5</li>
+      </ul>
+    </div>
+
+    <script>
+      // let containerElement = document.querySelector('.container');
+      // console.log(containerElement.children);
+      // console.log(containerElement.childNodes);
+      let listElement = document.querySelector(".li-2");
+      console.log(listElement);
+      listElement.style.backgroundColor = "tomato";
+      listElement.previousElementSibling.style.backgroundColor = "teal";
+
+      //   listElement.nextElementSibling.nextElementSibling.style.backgroundColor = "yellowgreen";
+      let listElement3 = listElement.nextElementSibling;
+      listElement3.nextElementSibling.style.backgroundColor = "yellowgreen";
+    </script>
+  </body>
+</html>

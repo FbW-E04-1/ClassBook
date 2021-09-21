@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li class="list-item">list item</li>
+      <li class="list-item">list item</li>
+      <li class="list-item">list item</li>
+      <li class="list-item">list item</li>
+    </ul>
+    <script>
+      let ulElement = document.querySelector("ul");
+
+      // returns a live HTMLCollection
+      let listItems = document.getElementsByTagName("li");
+      let newItem = document.createElement("li");
+      newItem.textContent = "new item";
+
+      ulElement.appendChild(newItem);
+      // returns a static NodeList
+      //   let listItems = document.querySelectorAll(".list-item");
+      let listItemsArray = Array.from(listItems);
+
+      listItemsArray.forEach((element) => {
+        console.log(element);
+      });
+      listItemsArray.filter((element) => {
+        console.log("inside filter", element);
+      });
+      console.log(listItems); // it contains only 4 elements
+
+      console.log(listItems); // it contains 5 elements
+    </script>
+  </body>
+</html>

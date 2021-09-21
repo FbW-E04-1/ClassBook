@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div class="card">
+            <div class="picture-wrap">
+              <img
+                src="images/rick.jpeg"
+                title="Rick Sanchez"
+                alt=""
+              />
+            </div>
+            <div class="card-footer">
+              <h3 class="character-name">Rick Sanchez</h3>
+              <div>Human</div>
+            </div>
+    </div> -->
+
+    <script>
+      // let characters = [
+      //   {
+      //     firstName: "Rick",
+      //     lastName: "Sanchez",
+      //     species: "Human",
+      //     picture: "rick.jpeg",
+      //   },
+      //   {
+      //     firstName: "Rick",
+      //     lastName: "Sanchez",
+      //     species: "Human",
+      //     picture: "rick.jpeg",
+      //   },
+      //   {
+      //     firstName: "Rick",
+      //     lastName: "Sanchez",
+      //     species: "Human",
+      //     picture: "rick.jpeg",
+      //   },
+      //   {
+      //     firstName: "Rick",
+      //     lastName: "Sanchez",
+      //     species: "Human",
+      //     picture: "rick.jpeg",
+      //   },
+      //   {
+      //     firstName: "Rick",
+      //     lastName: "Sanchez",
+      //     species: "Human",
+      //     picture: "rick.jpeg",
+      //   },
+      // ];
+      let character = {
+        firstName: "Rick",
+        lastName: "Sanchez",
+        species: "Human",
+        picture: "rick.jpeg",
+      };
+
+      let imagePath = "images/";
+
+      for (let i = 0; i < 10; i++) {
+        let cardElement = document.createElement("div");
+        cardElement.classList.add("card");
+
+        let pictureWrapElement = document.createElement("div");
+        pictureWrapElement.classList.add("picture-wrap");
+
+        let imgElement = document.createElement("img");
+        imgElement.src = imagePath + character.picture;
+        imgElement.title = `${character.firstName} ${character.lastName}`;
+        imgElement.alt = `${character.firstName} ${character.lastName}`;
+
+        let cardFooter = document.createElement("div");
+        cardFooter.classList.add("card-footer");
+
+        let h3Element = document.createElement("h3");
+        h3Element.textContent = `${character.firstName} ${character.lastName}`;
+
+        let speciesElement = document.createElement("div");
+        speciesElement.textContent = character.species;
+
+        document.body.appendChild(cardElement);
+        cardElement.appendChild(pictureWrapElement);
+        pictureWrapElement.appendChild(imgElement);
+        cardElement.appendChild(cardFooter);
+
+        cardFooter.appendChild(h3Element);
+        cardFooter.appendChild(speciesElement);
+      }
+    </script>
+  </body>
+</html>
