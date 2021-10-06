@@ -1,0 +1,19 @@
+{
+  "name": "00-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "npm.js",
+  "SCRIPTS": "case sensitive",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "myScript": "echo myScript"
+  },
+  "keywords": [
+    "color",
+    "something"
+  ],
+  "isPublished": false,
+  "publishedDate": null,
+  "author": "",
+  "license": "ISC"
+}

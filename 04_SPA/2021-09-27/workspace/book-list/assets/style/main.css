@@ -1,0 +1,35 @@
+/* img {
+  display: block;
+  max-width: 100%;
+} */
+
+.book-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.book {
+  width: 12rem;
+}
+
+.status {
+  font-style: italic;
+}
+
+.book-cover {
+  max-height: 15rem;
+  object-fit: cover;
+  border: 0.2rem solid black;
+}
+
+
+/* .card-footer {
+    display: flex;
+    justify-content: flex-end;
+} */
+/* .status {
+    background-color: #999;
+    border-radius: 16px;
+    padding: .25rem .5rem;
+} */

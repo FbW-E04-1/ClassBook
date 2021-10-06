@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main-container">
+      <div class="filters">
+        <button id="random-button" onclick="getRandomCharacter()">
+          Random Character
+        </button>
+        <form id="filter-form" onsubmit="submitForm(event)">
+          <div>
+            <label for="filter-name">Character name</label>
+            <input id="filter-name" type="text" />
+            <button onclick="onNameChange()">Search</button>
+          </div>
+          <fieldset>
+            <legend>Status</legend>
+            <label>
+              <input
+                name="status"
+                type="radio"
+                value=""
+                checked=""
+              />
+              All
+            </label>
+            <label>
+              <input
+                name="status"
+                type="radio"
+                value="Alive"
+              />
+              Alive
+            </label>
+            <label>
+              <input
+                name="status"
+                type="radio"
+                value="Dead"
+              />
+              Dead
+            </label>
+            <label>
+              <input
+                name="status"
+                type="radio"
+                value="Unknown"
+              />
+              Unknown
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Species</legend>
+            <label>
+              <input
+                name="species"
+                type="radio"
+                value=""
+                checked=""
+              />
+              All
+            </label>
+            <label>
+              <input
+                name="species"
+                type="radio"
+                value="Human"
+              />
+              Human
+            </label>
+            <label>
+              <input
+                name="species"
+                type="radio"
+                value="Alien"
+              />
+              Alien
+            </label>
+            <label>
+              <input
+                name="species"
+                type="radio"
+                value="Robot"
+              />
+              Robot
+            </label>
+            <label>
+              <input
+                name="species"
+                type="radio"
+                value="Humanoid"
+              />
+              Humanoid
+            </label>
+            <label>
+              <input
+                name="species"
+                type="radio"
+                value="Mythological Creature"
+              />
+              Mythological Creature
+            </label>
+            <label>
+              <input
+                name="species"
+                type="radio"
+                value="unknown"
+              />
+              Unknown
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Gender</legend>
+            <label>
+              <input
+                name="gender"
+                type="radio"
+                value=""
+                checked=""
+              />
+              All
+            </label>
+            <label>
+              <input
+                name="gender"
+                type="radio"
+                value="Female"
+              />
+              Female
+            </label>
+            <label>
+              <input
+                name="gender"
+                type="radio"
+                value="Male"
+              />
+              Male
+            </label>
+            <label>
+              <input
+                name="gender"
+                type="radio"
+                value="Genderless"
+              />
+              Genderless
+            </label>
+            <label>
+              <input
+                name="gender"
+                type="radio"
+                value="Unknown"
+              />
+              Unkown
+            </label>
+          </fieldset>
+        </form>
+      </div>
+      <main id="content">
+        <div class="characters-grid">
+
+          <div class="card">
+            <div class="picture-wrap">
+              <img
+                src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+                title="Rick Sanchez"
+                alt=""
+              />
+            </div>
+            <div class="card-footer">
+              <h3 class="character-name">Rick Sanchez</h3>
+              <div>Human</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="picture-wrap">
+              <img
+                src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+                title="Rick Sanchez"
+                alt=""
+              />
+            </div>
+            <div class="card-footer">
+              <h3 class="character-name">Rick Sanchez</h3>
+              <div>Human</div>
+            </div>
+          </div>
+
+          ...
+
+        </div> <!-- close .characters-grid -->
+      </main>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

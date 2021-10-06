@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background: #000;
+    font-family: sans-serif;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  #random-button {
+    background: limegreen;
+    border: none;
+    box-shadow: 5px 5px 0 black;
+    color: black;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: 700;
+    padding: .75rem;
+    transition: all ease-in-out .25s;
+    width: 100%;
+  }
+  
+  #random-button:hover {
+    background: black;
+    box-shadow: 5px 5px 0 limegreen;
+    color: limegreen;
+    transform: scale(1.025);
+  }
+  
+  #content {
+    color: white;
+    padding-left: 320px;
+  }
+  
+  form > * + * {
+    margin-top: 1.5rem;
+  }
+  
+  .filters {
+     background: white;
+     height: 100%;
+     left: 0;
+     overflow-y: scroll;
+     padding: 1.5rem;
+     position: fixed;
+     top: 0;
+     width: 320px;
+  }
+  
+  .filters > * + * {
+      margin-top: 3rem;
+  }
+  
+  label {
+      display: block;
+  }
+  .characters-grid {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    background: white;
+    border: 3px solid rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    color: black;
+    box-shadow: 0px 0px 35px 1px rgba(255, 255, 255, 0.8);
+    margin: 3rem;
+    overflow: hidden;
+    position: relative;
+    width: calc(33% - 6rem);
+  }
+  
+  .card.is-alien {
+      border-color: rgba(176,255,91,1);
+      box-shadow: 0px 0px 35px 1px rgba(176,255,91,0.5);
+  }
+  
+  .picture-wrap {
+  }
+  
+  .picture-wrap img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .card-footer {
+    padding: 1.5rem;
+  }
+  
+  .character-name {
+    margin: 0;
+  }
+  
