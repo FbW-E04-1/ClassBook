@@ -27,12 +27,16 @@ function requestHandler(req, res) {
 	res.write('<h1>hello world!</h1>');
 
 	// accessing the values given by the URL-query
-	// http://localhost:8080/path/a/b/?key1=value1&key2=value2
+	// http://localhost:8080/?key1=value1&key2=value2
 
 	let parsedURL = url.parse(req.url, true);
 	let query = parsedURL.query
-	res.write('key1', query.key1);
-	res.write('key2', query.key2);
+
+
+	res.write('<pre>');
+	res.write('key1:' + query.key1 + "\n");
+	res.write('key2:' + query.key2);
+	res.write('</pre>');
 
 	res.end();
 }
