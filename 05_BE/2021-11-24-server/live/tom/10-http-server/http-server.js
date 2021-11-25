@@ -1,4 +1,5 @@
-import http from 'http';
+//let http = require('http'); // commonjs syntax
+import http from 'http'; // module syntax, configurable in package.json via "type": "module"
 import url from 'url';
 
 // https://www.w3schools.com/nodejs/met_http_createserver.asp
