@@ -1,5 +1,4 @@
-var http = require('http');
-// ! change the way modules are imported.
+import http from 'http';
 
 const server = http.createServer(requestHandler);
 server.listen(8080);
