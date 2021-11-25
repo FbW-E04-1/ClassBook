@@ -1,5 +1,9 @@
 import http from 'http';
 
+// start the server on the commandline via:
+// $> nodemon server-recap.js 1080
+// then the server should listen to the port given as commandline parameter
+
 const server = http.createServer(requestHandler);
 server.listen(8080);
 
