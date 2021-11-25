@@ -34,8 +34,8 @@ function requestHandler(req, res) {
 
 
 	res.write('<pre>');
-	res.write('key1:' + query.key1 + "\n");
-	res.write('key2:' + query.key2);
+	res.write('key1: ' + query.key1 + "\n");
+	res.write('key2: ' + query.key2);
 	res.write('</pre>');
 
 	res.end();
