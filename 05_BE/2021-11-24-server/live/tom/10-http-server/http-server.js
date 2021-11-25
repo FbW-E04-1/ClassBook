@@ -1,5 +1,5 @@
-var http = require('http');
-var url = require('url');
+import http from 'http';
+import url from 'url';
 
 // https://www.w3schools.com/nodejs/met_http_createserver.asp
 // create a server
