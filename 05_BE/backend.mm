@@ -3,7 +3,7 @@
 <node TEXT="Server" FOLDED="false" ID="ID_549888357" CREATED="1637747363871" MODIFIED="1637747374153" STYLE="oval">
 <font SIZE="18"/>
 <hook NAME="MapStyle" zoom="1.5">
-    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" fit_to_viewport="false" show_note_icons="true"/>
+    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" fit_to_viewport="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -124,12 +124,10 @@
 <node TEXT="Deleted" ID="ID_723975791" CREATED="1637755334947" MODIFIED="1637755337869"/>
 </node>
 </node>
-<node TEXT="Client" ID="ID_1027004407" CREATED="1637755412969" MODIFIED="1637755415572">
+<node TEXT="Client" FOLDED="true" ID="ID_1027004407" CREATED="1637755412969" MODIFIED="1637755415572">
 <node TEXT="Browser" ID="ID_1056484190" CREATED="1637755419072" MODIFIED="1637755422659"/>
 </node>
 <node TEXT="Server" FOLDED="true" ID="ID_367853120" CREATED="1637755448226" MODIFIED="1637755450700">
-<node TEXT="Apache" ID="ID_1169773548" CREATED="1637755453448" MODIFIED="1637755458794"/>
-<node TEXT="nginx" ID="ID_1117498840" CREATED="1637755459795" MODIFIED="1637755464013"/>
 <node TEXT="javascript http-server" FOLDED="true" ID="ID_750325135" CREATED="1637755465215" MODIFIED="1637755481261">
 <font BOLD="true"/>
 <node TEXT="node_module &quot;http&quot;" ID="ID_1369945625" CREATED="1637765924092" MODIFIED="1637765931204">
@@ -138,12 +136,14 @@
 <node TEXT="specify a request-handler by defining a callback function&#xa;function requestHandler(req, res) {&#xa;   res.write(&apos;hello&apos;);&#xa;   res.end(); // must be called&#xa;}" ID="ID_1938393343" CREATED="1637765967841" MODIFIED="1637766067060"/>
 </node>
 </node>
+<node TEXT="Apache" ID="ID_1169773548" CREATED="1637755453448" MODIFIED="1637755458794"/>
+<node TEXT="nginx" ID="ID_1117498840" CREATED="1637755459795" MODIFIED="1637755464013"/>
 </node>
 <node TEXT="Client -&gt; Server" ID="ID_54779207" CREATED="1637748313707" MODIFIED="1637748327914"/>
 <node TEXT="Client does a Request" ID="ID_917384527" CREATED="1637748342043" MODIFIED="1637748365974">
 <arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="200" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_902962449" STARTINCLINATION="40;0;" ENDINCLINATION="40;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 </node>
-<node TEXT="Server sends a Response" ID="ID_902962449" CREATED="1637748350858" MODIFIED="1637748357452">
+<node TEXT="Server sends a Response" FOLDED="true" ID="ID_902962449" CREATED="1637748350858" MODIFIED="1637748357452">
 <node TEXT="Response" ID="ID_928053242" CREATED="1637831582421" MODIFIED="1637831585197">
 <node TEXT="Message" ID="ID_985610331" CREATED="1637831586285" MODIFIED="1637831592672">
 <node TEXT="Head" ID="ID_1606727779" CREATED="1637831596989" MODIFIED="1637833873432" LINK="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers">
@@ -165,7 +165,8 @@
 <node TEXT="IP-Stack" POSITION="right" ID="ID_1877551243" CREATED="1637846075886" MODIFIED="1637846355858" LINK="https://en.wikipedia.org/wiki/Internet_protocol_suite">
 <edge COLOR="#ff00ff"/>
 <node TEXT="illustration" ID="ID_1370890275" CREATED="1637846327114" MODIFIED="1637846338909" LINK="https://en.wikipedia.org/wiki/Internet_protocol_suite#/media/File:UDP_encapsulation.svg"/>
-<node TEXT="Application Layer" FOLDED="true" ID="ID_785437875" CREATED="1637846231637" MODIFIED="1637846235230">
+<node TEXT="App" ID="ID_646031728" CREATED="1637934234941" MODIFIED="1637934237840"/>
+<node TEXT="Application Layer" ID="ID_785437875" CREATED="1637846231637" MODIFIED="1637846235230">
 <node TEXT="Web Server" ID="ID_364504031" CREATED="1637846238657" MODIFIED="1637846241985">
 <node TEXT="http" ID="ID_399530500" CREATED="1637846568314" MODIFIED="1637846570911"/>
 </node>
@@ -207,7 +208,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="tools" FOLDED="true" ID="ID_1085615985" CREATED="1637847843977" MODIFIED="1637847845499">
