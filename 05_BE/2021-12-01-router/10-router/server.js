@@ -76,3 +76,27 @@ server.put(PATH_BOOKS, function (req, res) {
     res.send('Update the book')
 });
 
+// tasks
+let tasksRouter = require('./routers/tasksRouter.js');
+server.use('/tasks', tasksRouter);
+
+// // users
+// POST        /users
+// GET         /users
+// GET         /users/:userId
+// PUT         /users/:userId
+// DELETE      /users/:userId
+
+// // teams
+// POST        /teams
+// GET         /teams
+// GET         /teams/:teamId
+// PUT         /teams/:teamId
+// DELETE      /teams/:teamId
+
+// // categories
+// POST        /categories
+// GET         /categories
+// GET         /categories/:categoryId
+// PUT         /categories/:categoryId
+// DELETE      /categories/:categoryId
