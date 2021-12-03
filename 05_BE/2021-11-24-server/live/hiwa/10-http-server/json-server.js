@@ -8,9 +8,9 @@ function requestHandler(req, res) {
 	console.log("request received");
 
 	let obj = {
-		firstname: "Thomas",
-		lastname: "Hofmann",
-		age: 46
+		firstname: "Hermann",
+		lastname: "Hesse",
+		age: '1877,Calw',
 	};
 
 	let jsonRepresentation = JSON.stringify(obj);
@@ -18,6 +18,4 @@ function requestHandler(req, res) {
 	res.writeHead(200, {'Content-Type': 'application/json'});
 	res.write(jsonRepresentation);
 	res.end();
-
-	
 }

@@ -1,13 +1,11 @@
 {
-  "name": "10-http-server",
+  "name": "24-nov-back-end-begin",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "type": "module",
+  "type":"module",
   "dependencies": {
-    "axios": "^0.24.0",
-    "http": "^0.0.1-security",
-    "url": "^0.11.0"
+    "http": "^0.0.1-security"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
