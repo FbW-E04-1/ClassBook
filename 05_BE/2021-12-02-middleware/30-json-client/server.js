@@ -5,6 +5,7 @@ const server = express();
 
 server.listen(process.env.PORT, () => console.log(`server running on port ${process.env.PORT}`));
 
+// a middleware function must have the parameters (req, res, next)
 const loggingMiddleware = require('./middlewares/loggingMiddleware.js');
 server.use(loggingMiddleware);
 
