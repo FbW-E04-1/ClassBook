@@ -11,9 +11,7 @@ server.listen(process.env.PORT, () => console.log(`server running on port ${proc
 // populate req.body - req.header 'Content-Type' must be 'application/json'
 server.use(express.json());
 
-server.use(middlewareFn)
-
-function middlewareFn(req, res, next) {
+function validateResourceMiddleware(req, res, next) {
 	console.log('middlewareFn');
 
 	const schema = {
@@ -39,16 +37,43 @@ function middlewareFn(req, res, next) {
 	}
 
 	console.log("data successfully validated");
-	// if (valid) {
-	// 	console.log("data is valid");
-	// } else {
-	// 	console.log(ajv.errors);
-	// }
-	
 	next();
 };
 
-server.post('/resource', (req, res) => {
+function validateUserMiddleware(req, res, next) {
+	console.log('validateUserMiddleware');
+
+	const schema = {
+		type: "object",
+		properties: {
+		  name: {type: "string"},
+		  password: {
+			  type: "string",
+			  minLength: 8
+		  }
+		},
+		required: ["name", "password"],
+		additionalProperties: false
+	};
+
+	let data = req.body;
+	const valid = ajv.validate(schema, data);
+
+	if (!valid) {
+		console.error(ajv.errors);
+		return res.json(ajv.errors);
+	}
+
+	console.log("data successfully validated");
+	next();
+};
+
+server.post('/resource', validateResourceMiddleware, (req, res) => {
+	console.log(req.body);
+	res.send(req.body);
+});
+
+server.post('/user', validateUserMiddleware, (req, res) => {
 	console.log(req.body);
 	res.send(req.body);
 });
