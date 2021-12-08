@@ -1,15 +1,13 @@
-const userSchema = {
+const schema = {
 	type: "object",
 	properties: {
-	  name: {type: "string"},
 	  email: {type: "string"},
 	  password: {
 		  type: "string",
-		  minLength: 8
 	  }
 	},
-	required: ["name", "password"],
+	required: ["email", "password"],
 	additionalProperties: false
 };
 
-module.exports = userSchema;
+module.exports = schema;
