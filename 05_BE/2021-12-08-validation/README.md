@@ -1,5 +1,7 @@
 # Validation
 
+please update repo `$> git pull`
+
 ## AJV
 - [Getting Started](https://ajv.js.org/guide/getting-started.html)
   - AJV validates data according to given schema:
