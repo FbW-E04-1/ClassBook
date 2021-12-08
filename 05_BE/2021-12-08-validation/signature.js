@@ -3,7 +3,7 @@
 // - the list of parameters
 // - the return value
 
-// What is the "Signature" of a function
+// What is the "Signature" of a function, referring to the docu of 'console.log(...)'
 // https://developer.mozilla.org/de/docs/Web/API/Console/log
 
 //console.log();
