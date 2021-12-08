@@ -76,8 +76,11 @@ server.put(PATH_BOOKS, function (req, res) {
     res.send('Update the book')
 });
 
+
+// Request: 'GET /tasks'
 // tasks
 let tasksRouter = require('./routers/tasksRouter.js');
+// mount the router 'tasksRouter' to routes starting with the path '/tasks';
 server.use('/tasks', tasksRouter);
 
 // // users
