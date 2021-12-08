@@ -48,3 +48,10 @@ please update repo `$> git pull`
 
   - `makeX()` would be a function that creates `X` and returns it.
     `make` indicates that it is a so called factory function
+
+
+## Problems
+- Stephane 
+  - Internet too slow for picture
+    - reached out to Bianca
+  - Final Project "Air Quality in Berlin"
