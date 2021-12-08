@@ -4,7 +4,6 @@
   "description": "",
   "main": "validate.js",
   "scripts": {},
-  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
