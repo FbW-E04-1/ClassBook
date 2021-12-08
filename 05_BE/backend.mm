@@ -82,10 +82,18 @@
 <node TEXT="HyperText Transport Protocol (HTTP)" FOLDED="true" ID="ID_1468379677" CREATED="1637748287922" MODIFIED="1638436263725">
 <node TEXT="Client does a Request" ID="ID_917384527" CREATED="1637748342043" MODIFIED="1637748365974">
 <arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="200" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_902962449" STARTINCLINATION="40;0;" ENDINCLINATION="40;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<node TEXT="Message" FOLDED="true" ID="ID_1449886340" CREATED="1638953494168" MODIFIED="1638953501469">
+<node TEXT="Head" ID="ID_643162600" CREATED="1638953502409" MODIFIED="1638953505125">
+<node TEXT="headers" ID="ID_379056803" CREATED="1638953577125" MODIFIED="1638953579401">
+<node TEXT="Content-Type" ID="ID_1142792763" CREATED="1638953510727" MODIFIED="1638953523154"/>
+</node>
+</node>
+<node TEXT="Body" ID="ID_1827736057" CREATED="1638953505510" MODIFIED="1638953508293"/>
+</node>
 </node>
 <node TEXT="Server sends a Response" FOLDED="true" ID="ID_902962449" CREATED="1637748350858" MODIFIED="1637748357452">
-<node TEXT="Response" ID="ID_928053242" CREATED="1637831582421" MODIFIED="1637831585197">
-<node TEXT="Message" ID="ID_985610331" CREATED="1637831586285" MODIFIED="1637831592672">
+<node TEXT="Response" FOLDED="true" ID="ID_928053242" CREATED="1637831582421" MODIFIED="1637831585197">
+<node TEXT="Message" FOLDED="true" ID="ID_985610331" CREATED="1637831586285" MODIFIED="1637831592672">
 <node TEXT="Head" ID="ID_1606727779" CREATED="1637831596989" MODIFIED="1637833873432" LINK="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers">
 <node TEXT="status-code" ID="ID_1095117222" CREATED="1637832198492" MODIFIED="1637833918851" LINK="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">
 <node TEXT="2xx - Successful" ID="ID_1878394794" CREATED="1637832217702" MODIFIED="1637833928915" LINK="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_success"/>
@@ -162,15 +170,34 @@
 <node TEXT="possibly convenient to share test HTTP Requests" ID="ID_342482001" CREATED="1638457994777" MODIFIED="1638458015420"/>
 </node>
 </node>
-<node TEXT="Server" FOLDED="true" ID="ID_367853120" CREATED="1637755448226" MODIFIED="1637755450700">
-<node TEXT="express" FOLDED="true" ID="ID_865270302" CREATED="1638346643646" MODIFIED="1638346656141">
+<node TEXT="Server" ID="ID_367853120" CREATED="1637755448226" MODIFIED="1637755450700">
+<node TEXT="express" ID="ID_865270302" CREATED="1638346643646" MODIFIED="1638346656141">
 <font BOLD="true"/>
-<node TEXT="Route" FOLDED="true" ID="ID_577711474" CREATED="1638346725003" MODIFIED="1638432420409" LINK="https://expressjs.com/en/guide/routing.html">
+<node TEXT="Route" ID="ID_577711474" CREATED="1638346725003" MODIFIED="1638952452374" LINK="https://expressjs.com/en/guide/routing.html"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      handler function: (req, res) =&gt; {
+    </p>
+    <p>
+      &#160;&#160;res.status(200).send('hello');
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
 <node TEXT="HTTP-Method" ID="ID_1407545087" CREATED="1638346733739" MODIFIED="1638346742809"/>
-<node TEXT="URL" ID="ID_1948367884" CREATED="1638346743196" MODIFIED="1638346746265">
+<node TEXT="URL" FOLDED="true" ID="ID_1948367884" CREATED="1638346743196" MODIFIED="1638346746265">
 <node TEXT="protocol (HTTP/HTTPS)" ID="ID_1299660628" CREATED="1638432468790" MODIFIED="1638432480089"/>
 <node TEXT="address (hostname, IP address AND port)" ID="ID_1016855918" CREATED="1638432480829" MODIFIED="1638432754838"/>
-<node TEXT="path" ID="ID_8110483" CREATED="1638432492018" MODIFIED="1638437204012">
+<node TEXT="path" FOLDED="true" ID="ID_8110483" CREATED="1638432492018" MODIFIED="1638437204012">
 <font BOLD="true"/>
 <node TEXT="string" ID="ID_1296709729" CREATED="1638432594282" MODIFIED="1638432875147">
 <font BOLD="true"/>
@@ -190,11 +217,71 @@
 </node>
 <node TEXT="express.Router" ID="ID_133116411" CREATED="1638433367312" MODIFIED="1638433370539"/>
 </node>
-<node TEXT="Middlewares" FOLDED="true" ID="ID_1981222909" CREATED="1638448257472" MODIFIED="1638448262843" LINK="https://expressjs.com/en/guide/using-middleware.html">
+<node TEXT="Middlewares" FOLDED="true" ID="ID_1981222909" CREATED="1638448257472" MODIFIED="1638952498759" LINK="https://expressjs.com/en/guide/using-middleware.html"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      handler function: (req, res, next) =&gt; {
+    </p>
+    <p>
+      &#160;&#160;console.log('request received');
+    </p>
+    <p>
+      &#160;&#160;next();
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
 <node TEXT="logging" ID="ID_1283287814" CREATED="1638457966955" MODIFIED="1638457972462"/>
 <node TEXT="express.json()" ID="ID_122643529" CREATED="1638450287703" MODIFIED="1638450310005" LINK="https://expressjs.com/en/api.html#express.json">
 <node TEXT="!!!! The Client MUST set the &apos;Content-Type&apos; header to &apos;application/json&apos;" ID="ID_211806593" CREATED="1638450311397" MODIFIED="1638450339898"/>
 </node>
+</node>
+<node TEXT="ErrorHandlingMiddlewares" ID="ID_1787266927" CREATED="1638952519785" MODIFIED="1638952677378"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      handler function: (error, req, res, next) =&gt; {
+    </p>
+    <p>
+      &#160;&#160;console.error('error X occured');
+    </p>
+    <p>
+      &#160;&#160;next();
+    </p>
+    <p>
+      }
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Routers" ID="ID_1012577557" CREATED="1638952715084" MODIFIED="1638952717961">
+<node TEXT="package for implementation &apos;express-router&apos;" ID="ID_230001430" CREATED="1638952725244" MODIFIED="1638952737031"/>
+<node TEXT="routers get &apos;mounted&apos; for specific &apos;paths&apos;" ID="ID_1613853131" CREATED="1638953411673" MODIFIED="1638953431277"/>
+<node TEXT="router defined what should be done for specific requests" ID="ID_374256898" CREATED="1638953432114" MODIFIED="1638953447383"/>
+</node>
+<node TEXT="res.set(HEADER);&#xa;// =&gt; set HTTP-Header" ID="ID_672943566" CREATED="1638953775617" MODIFIED="1638953932080">
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="200" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1606727779" STARTINCLINATION="515;0;" ENDINCLINATION="515;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+</node>
+<node TEXT="res.status(STATUS_CODE);&#xa;// =&gt; set the HTTP-Status -Code" ID="ID_1474737576" CREATED="1638953747075" MODIFIED="1638953939779">
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="200" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1095117222" STARTINCLINATION="599;0;" ENDINCLINATION="599;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+</node>
+<node TEXT="res.send(&apos;BODY_CONTENT&apos;);&#xa;// =&gt; send content in the body" ID="ID_1179312102" CREATED="1638953756529" MODIFIED="1638953944676">
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="200" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1887988754" STARTINCLINATION="479;0;" ENDINCLINATION="479;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 </node>
 </node>
 <node TEXT="javascript http-server" FOLDED="true" ID="ID_750325135" CREATED="1637755465215" MODIFIED="1638346653672">
