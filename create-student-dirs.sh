@@ -11,6 +11,6 @@ for student in araz arta david emad gabo gabriele hiwa jelena jerreh marlen math
     touch "$dir_student/.keep"
 
     if [[ $dir_source && -e $dir_source ]]; then
-        cp -a "$dir_source" "$dir_student"
+        cp -a "$dir_source/." "$dir_student"
     fi
 done

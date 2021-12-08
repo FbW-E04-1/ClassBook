@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        form {
+            position: relative;
+            top: 20vh;
+            margin: auto;
+            max-width: 500px;
+            padding: 20px;
+            border: 2px solid #3366CC;
+            text-align: center;
+        }
+
+        input, label {
+            display: block;
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+    <form action="//localhost:3210/login" method="POST" id="login" autocomplete="off">
+        <input autocomplete="false" name="hidden" type="text" style="display:none;">
+        <h1>Maximum Security App Login</h1>
+
+        <label for="username">Username</label>
+        <input type="text" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" id="password">
+
+        <input type="submit" value="Log in">
+
+        <div id="message"></div>
+    </form>
+
+    <script type="text/javascript">
+        const form = document.getElementById("login");
+        const username = document.getElementById("username");
+        const password = document.getElementById("password");
+
+        const message = document.getElementById("message");
+
+        form.addEventListener("submit", event => {
+            fetch("http://localhost:3210/login", {
+                method: "POST",
+                body: JSON.stringify({
+                    username: username.value,
+                    password: password.value,
+                }),
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            })
+                .then(response => response.json())
+                .then(response => {
+                    message.innerHTML = response;
+                    console.log(response);
+                });
+
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>
