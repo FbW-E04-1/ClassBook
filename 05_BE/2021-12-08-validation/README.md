@@ -22,6 +22,7 @@ please update repo `$> git pull`
 - The **signature** of a Function consists of the **function name**, the **parameters**, and its **return value**.
 
 ## AJV (possible abbreviation for: Another Javascript Validator)
+- [AJV](https://ajv.js.org/)
 - [Getting Started](https://ajv.js.org/guide/getting-started.html)
   - AJV validates data according to given schema:
     - [JSON Schema](https://ajv.js.org/json-schema)
