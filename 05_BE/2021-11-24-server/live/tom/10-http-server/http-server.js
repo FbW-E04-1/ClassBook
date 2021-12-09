@@ -1,5 +1,6 @@
-var http = require('http');
-var url = require('url');
+//let http = require('http'); // commonjs syntax
+import http from 'http'; // module syntax, configurable in package.json via "type": "module"
+import url from 'url';
 
 // https://www.w3schools.com/nodejs/met_http_createserver.asp
 // create a server
@@ -34,8 +35,8 @@ function requestHandler(req, res) {
 
 
 	res.write('<pre>');
-	res.write('key1:' + query.key1 + "\n");
-	res.write('key2:' + query.key2);
+	res.write('key1: ' + query.key1 + "\n");
+	res.write('key2: ' + query.key2);
 	res.write('</pre>');
 
 	res.end();
