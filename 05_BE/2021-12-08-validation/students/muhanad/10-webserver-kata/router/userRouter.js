@@ -1,37 +1,85 @@
 const route = require("express").Router()
 
 
-const users = [
-    {id : 1, name :"first"},
-    {id : 2, name :"second"},
-    {id : 3, name :"third"},
-    ]
+let users = {
+  1: {
+     firstname: "Lise",
+     lastname: "Meitner",
+     email: "lmeitner@example.com"
+  },
+  2: {
+     firstname: "Albert",
+     lastname: "Einstein",
+     email: "aeinstein@example.de"
+  },
+  3: {
+    firstname: "bert",
+    lastname: "Einstein",
+    email: "aeinstein@example.de"
+ }
+}
 
-route.get("/" , (req, res)=> {
-    res.send(`${req.method} ${req.url} `)  
+route.get("/" , (req, res,next)=> {
+    try {
+      res.send(`${req.method} ${req.url} `) 
+    } catch (error) {
+      next(error);
+    } 
   })
   
-  route.get("/:resId" , (req, res)=> {
-      res.send(`${req.method} ${req.url} ${req.params.resId}`)  
+  route.get("/:resId" , (req, res, next)=> {
+    try {
+      if(!Object.keys(users).includes(+req.params.resId)){
+        return res.status(404).end("user not found")}
+        const targetUser = +req.params.resId
+        res.send(users[targetUser])
+    } catch (error) {
+      
+      next(error)
+    }  
+  })
+                          // how to change res.headers ???!!!
+
+
+
+  route.post("/" , (req, res,next) => {
+    try {
+      /* const targetUser = +req.params.usersId
+    users[targetUser] = req.body */
+    const key = Object.keys(users).length +1
+    users[key] = req.body
+    res.send(users)
+    } catch (error) {
+      next(error)
+    }
+  
   })
   
-  route.post("/" , (req, res) => {
-    /* console.log(`${req.method} ${req.url}`); */
-      res.status(201).send(req.body)
-  })
-  
-  route.delete("/:resId" , (req, res) => {
-    const target = users.find((item) => item.id === +req.params.resId)
-    const index = users.indexOf(target)
-    const clone = [...users]
-    clone.splice(index, 1)
-    res.send(clone)
-  })
-  
-  route.put("/:usersId", (req, res) => {
+  route.delete("/:resId" , (req, res,next) => {
+    try {
+      const targetUser = +req.params.resId
+    delete users[targetUser]
+    /* res.send(users) */
+    res.status(204).end()
+    } catch (error) {
+      next(error)
+    }
     
-    res.status(201).send(`${req.method} ${req.url} ${req.params.usersId}`)
-    console.log(users);
+  })
+  function error () {
+    throw new Error("I am an invented error!!")
+  }
+  route.put("/:usersId", (req, res,next) => {
+    
+    try {
+      error()
+      const targetUser = +req.params.usersId
+    users[targetUser] = req.body
+
+    res.send(users)
+    } catch (error) {
+      next(error)
+    }
   })
 
 
