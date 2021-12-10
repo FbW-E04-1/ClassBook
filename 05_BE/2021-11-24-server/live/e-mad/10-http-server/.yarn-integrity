@@ -1,0 +1,16 @@
+{
+  "systemParams": "linux-x64-88",
+  "modulesFolders": [
+    "node_modules"
+  ],
+  "flags": [],
+  "linkedModules": [],
+  "topLevelPatterns": [
+    "http@^0.0.1-security"
+  ],
+  "lockfileEntries": {
+    "http@^0.0.1-security": "https://registry.yarnpkg.com/http/-/http-0.0.1-security.tgz#3aac09129d12dc2747bbce4157afde20ad1f7995"
+  },
+  "files": [],
+  "artifacts": {}
+}

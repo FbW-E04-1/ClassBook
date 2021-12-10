@@ -67,7 +67,7 @@
 
 11. Improve the route `GET /user/:id` so that it responds with an HTTP-status-code corresponding to a "Not Found" resource, in case the resource with the given `id` is not found.
 
-12. Add a route that responses if no route has been called. That route shall respond with an HTTP-status of `404` without any data in the HTTP-response's body. - Hint: The route `GET /` may need to be changed.
+12. Add a route that responds if no route has been called. That route shall respond with an HTTP-status of `404` without any data in the HTTP-response's body. - Hint: The route `GET /` may need to be changed.
 
 13. Create and use a middleware that handles thrown errors.
     - it shall respond with an HTTP-status-code of `500` and an empty HTTP-response-body.

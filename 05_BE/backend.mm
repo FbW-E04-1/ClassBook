@@ -191,7 +191,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="HTTP-Method" ID="ID_1407545087" CREATED="1638346733739" MODIFIED="1638346742809"/>
 <node TEXT="URL" FOLDED="true" ID="ID_1948367884" CREATED="1638346743196" MODIFIED="1638346746265">
@@ -217,7 +216,7 @@
 </node>
 <node TEXT="express.Router" ID="ID_133116411" CREATED="1638433367312" MODIFIED="1638433370539"/>
 </node>
-<node TEXT="Middlewares" FOLDED="true" ID="ID_1981222909" CREATED="1638448257472" MODIFIED="1638952498759" LINK="https://expressjs.com/en/guide/using-middleware.html"><richcontent TYPE="NOTE">
+<node TEXT="Middlewares" ID="ID_1981222909" CREATED="1638448257472" MODIFIED="1638952498759" LINK="https://expressjs.com/en/guide/using-middleware.html"><richcontent TYPE="NOTE">
 
 <html>
   <head>
@@ -238,10 +237,9 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="logging" ID="ID_1283287814" CREATED="1638457966955" MODIFIED="1638457972462"/>
-<node TEXT="express.json()" ID="ID_122643529" CREATED="1638450287703" MODIFIED="1638450310005" LINK="https://expressjs.com/en/api.html#express.json">
+<node TEXT="express.json()" FOLDED="true" ID="ID_122643529" CREATED="1638450287703" MODIFIED="1638450310005" LINK="https://expressjs.com/en/api.html#express.json">
 <node TEXT="!!!! The Client MUST set the &apos;Content-Type&apos; header to &apos;application/json&apos;" ID="ID_211806593" CREATED="1638450311397" MODIFIED="1638450339898"/>
 </node>
 </node>
@@ -266,7 +264,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Routers" ID="ID_1012577557" CREATED="1638952715084" MODIFIED="1638952717961">
