@@ -29,9 +29,9 @@ server.post( // creating a new user
 );
 
 server.post( // authenticating/log-in of a user
-	'/authentication',
+	'/authentication', // path
 	makeValidationMiddleware(require('./schemas/authenticationSchema')), 
-	(req, res) => {
+	(req, res) => { // request-handler
 		console.log(req.body);
 		res.send(req.body);
 	}
