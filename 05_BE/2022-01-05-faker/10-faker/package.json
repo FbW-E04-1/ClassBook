@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon server.js",
     "seed": "node seed.js",
@@ -10,7 +11,6 @@
   },
   "keywords": [],
   "author": "",
-  "type": "module",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
