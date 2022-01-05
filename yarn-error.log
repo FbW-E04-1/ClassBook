@@ -1,0 +1,43 @@
+Arguments: 
+  /Users/timelesssound/.nvm/versions/node/v15.14.0/bin/node /Users/timelesssound/.nvm/versions/node/v15.14.0/bin/yarn add hhtp
+
+PATH: 
+  /Users/timelesssound/.nvm/versions/node/v15.14.0/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/ImageMagick/bin:/Users/timelesssound/.nvm/versions/node/v15.14.0/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  15.14.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/hhtp: Not found
+      at Request.params.callback [as _callback] (/Users/timelesssound/.nvm/versions/node/v15.14.0/lib/node_modules/yarn/lib/cli.js:66140:18)
+      at Request.self.callback (/Users/timelesssound/.nvm/versions/node/v15.14.0/lib/node_modules/yarn/lib/cli.js:140885:22)
+      at Request.emit (node:events:369:20)
+      at Request.<anonymous> (/Users/timelesssound/.nvm/versions/node/v15.14.0/lib/node_modules/yarn/lib/cli.js:141857:10)
+      at Request.emit (node:events:369:20)
+      at IncomingMessage.<anonymous> (/Users/timelesssound/.nvm/versions/node/v15.14.0/lib/node_modules/yarn/lib/cli.js:141779:12)
+      at Object.onceWrapper (node:events:475:28)
+      at IncomingMessage.emit (node:events:381:22)
+      at endReadableNT (node:internal/streams/readable:1307:12)
+      at processTicksAndRejections (node:internal/process/task_queues:81:21)
+
+npm manifest: 
+  {
+    "name": "ClassBook",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:FbW-E04-1/ClassBook.git",
+    "author": "Jerreh <timeless_sound@hotmail.de>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
