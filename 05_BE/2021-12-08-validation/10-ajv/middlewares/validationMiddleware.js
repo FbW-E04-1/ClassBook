@@ -1,6 +1,9 @@
 const Ajv = require("ajv");
 const ajv = new Ajv();
 
+const addFormats = require("ajv-formats")
+addFormats(ajv)
+
 function makeValidationMiddleware(schema) {
 	return function validateResourceMiddleware(req, res, next) {
 		console.log('validateSchemaMiddleware');

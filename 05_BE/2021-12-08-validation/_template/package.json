@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "validate.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
