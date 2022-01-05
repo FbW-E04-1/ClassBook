@@ -1,11 +1,21 @@
+const Ajv = require("ajv");
+const ajv = new Ajv();
 
-
-
-const data = {
-  foo: 1,
-  bar: "abc",
+const schema = {
+  type: "object",
+  properties: {
+    foo: { type: "integer" },
+    bar: { type: "string" },
+    another: { type: "string" },
+  },
+  required: ["foo"],
+  additionalProperties: false,
 };
 
-
-const valid = validate(data);
-if (!valid) console.log(validate.errors);
+const data = { foo: 1, bar: "abc", another: 123 };
+const valid = ajv.validate(schema, data);
+if (valid) {
+  console.log("data is Valid");
+} else {
+  console.log(ajv.errors);
+}

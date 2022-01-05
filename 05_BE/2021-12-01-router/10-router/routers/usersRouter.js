@@ -12,4 +12,8 @@ router.get('/:userId', (req, res) => {
 	res.send('response: user with userId: ' + req.params.userId);
 });
 
+// router.post(...);
+// router.delete(...);
+// router.put(...);
+
 module.exports = router

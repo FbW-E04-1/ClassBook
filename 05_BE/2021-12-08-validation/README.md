@@ -1,7 +1,10 @@
 # Validation
 
 ## Note
+
 please update repo `$> git pull`
+
+https://forms.gle/yaqNhuAejRN4xWZWA
 
 ## Recap
 - Recap HTTP and Express
