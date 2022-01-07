@@ -1,12 +1,13 @@
 require('dotenv').config();
 
-const db = require('./lib/database.require-syntax.js');
+const initDB = require('./lib/database.require-syntax.js');
 
 var faker = require("faker");
 // pin point the data
 faker.seed(12345);
 
 async function generateData() {
+	const db = await initDB();
 	
 	// cleanup 
 	// deleteMany(): https://docs.mongodb.com/manual/reference/method/db.collection.deleteMany/
