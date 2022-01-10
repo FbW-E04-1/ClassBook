@@ -11,7 +11,7 @@ const client = await MongoClient.connect(process.env.MONGODB_URI, {
 });
 
 // Wir legen mit .db() die Datenbank fest...
-const db = client.db("online_magazine");
+const db = client.db();
 
 // ...und exportieren diese anschließend für die weitere Verwendung
 export default db;
