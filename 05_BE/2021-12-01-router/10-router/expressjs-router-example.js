@@ -10,3 +10,6 @@ let birds = require('./routers/birds.js');
 
 // mount the 'birds'-router to the paths beginning with '/birds'
 server.use('/birds', birds);
+
+server.get('/',(req,res)=>{ res.send("Hello Marlen")})
+server.get('/Hello',(req,res)=>{ res.send("Hello")})

@@ -21,6 +21,7 @@
 ## Links
 ### Faker
 - [faker-API](http://marak.github.io/faker.js/)
+  - https://faker.readthedocs.io/en/master/providers.html
 - [faker@github](https://github.com/faker/)
 - [faker@npmjs](https://www.npmjs.com/package/faker)
 

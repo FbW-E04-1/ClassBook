@@ -1,0 +1,11 @@
+{
+  "name": "ClassBook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:FbW-E04-1/ClassBook.git",
+  "author": "Jerreh <timeless_sound@hotmail.de>",
+  "license": "MIT",
+  "dependencies": {
+    "url": "^0.11.0"
+  }
+}

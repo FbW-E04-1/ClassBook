@@ -7,8 +7,11 @@ const client = new MongoClient(process.env.MONGODB_URI, { useNewUrlParser: true,
 // after connecting, it triggers the callback function.
 // if there are any errors, it will log them via console.error.
 client.connect(error => {
-    if (error) console.error(error);
-    console.log("connected to database");
+    if (error) {
+        console.error("error - could not connect to database:", error);
+    } else {
+        console.log("connected to database");
+    }
 });
 
 // we point to the database with the following line.
