@@ -16,7 +16,8 @@ const User = require("./models/User.js");
 server.post("/users", async (req, res, next) => {
     try {
         // ...and call the create function from it
-        const newUser = await User.create("myUsername3", "myPassword", 31);
+        const user = req.body;
+        const newUser = await User.create(user);
         res.json(newUser);
     } catch (error) {
         res.status(400).json(error);
