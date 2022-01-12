@@ -1,6 +1,12 @@
 # Mongoose - Subdocuments
 
+Nesting of data structures
 [Mongoose - Subdocuments](https://mongoosejs.com/docs/subdocs.html)
+
+## Unified Modeling Language (UML)
+
+- [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language)
+- [Class Diagram](https://en.wikipedia.org/wiki/Class_diagram)
 
 ## Testing
 ### Types of Tests 
