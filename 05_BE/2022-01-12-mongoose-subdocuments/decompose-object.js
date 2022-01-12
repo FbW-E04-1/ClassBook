@@ -7,7 +7,7 @@ let objA = {
 }
 
 function logObject(object){
-	console.log(object);
+	console.log("object:", object);
 }
 logObject(objA);
 
