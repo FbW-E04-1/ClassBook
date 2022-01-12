@@ -8,6 +8,10 @@ Nesting of data structures
 - [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language)
 - [Class Diagram](https://en.wikipedia.org/wiki/Class_diagram)
 
+- Software to create diagrams "dia" (Linux)
+
+  `$> sudo apt install dia`
+
 ## Testing
 ### Types of Tests 
 - unit tests
