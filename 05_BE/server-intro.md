@@ -8,25 +8,24 @@
 6.`yarn add --dev nodemon` => will listen to the file and update the server each time it is updated
 
 
-the ateway is the door to go in/out of the local network.
-the command = `traceroute xxxx.org/net/com` shows the ping of different networks(getways) which are in the way until i reach the target network.
+the gateway is the door to go in/out of the local network.
+the command = `traceroute xxxx.org/net/com` shows the ping of different networks (gateways) which are on the way until the target network is reached.
 
 
 ## Transport layer
 
 Work through ports
 
-UDP - user datagram protocol (send a messag eand hope it arrived)
-TCP - transmission control protocol (can send a message and receiver send aknowledge message. Is guarantees that the message arrived)
+UDP - user datagram protocol (send a message and hope it arrives)
+TCP - transmission control protocol (can send a message and receiver send acknowledge message. It guarantees that the message has arrived.)
 
 
 ## AXIOS
 
 `npm install axios`
 
-axios is a promise based HTTP cloent for node.js and the browser. 
+axios is a promise based HTTP client for node.js and the browser. 
 
 - Make XMLHttpREquests from the browser
 - Make htto requests from node.js
 - supportsthe promise API
-- 
