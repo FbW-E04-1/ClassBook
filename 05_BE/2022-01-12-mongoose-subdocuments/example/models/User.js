@@ -2,6 +2,20 @@
 // e.g.: User, Product, Task, Category...
 const mongoose = require("mongoose");
 
+const addressSchema = new mongoose.Schema({ 
+    // street: 'string', // Shortcut to define the type
+    street: { 
+        type: String,
+    },
+    postalCode: { 
+        type: String,
+    },
+    city: { 
+        type: String,
+        required: true,
+    },
+});
+
 // this schema represents the document structure
 // we can define the type, if it is required or not, validate with our own function...
 const schema = new mongoose.Schema({
@@ -19,6 +33,32 @@ const schema = new mongoose.Schema({
         required: true,
         validate: v => (v <= 100),
     },
+
+    // addressOffice: addressSchema, // shortcut way to define the type
+    addressOffice: { 
+        type: addressSchema, 
+    },
+
+    addresses: {
+        type: [addressSchema]
+    }
+
+    // addressHome: {
+    //     type: addressSchema
+    // },
+
+    // addressDeliveries: {
+    //     type: addressSchema
+    // },
+
+    // Pseudo Code:
+    // addressInplace: {
+    //     type: {
+    //         street: 'string',
+    //         postalCode: 'string',
+    //         city: 'string',
+    //     }
+    // }
 },
 {
     // mongoose adds a __v property by default
@@ -47,7 +87,18 @@ async function create (username, password, age) {
         username,
         password,
         age,
-        children: [{name: "Leander"}, {name: "Merle"}],
+        addresses: [
+            {
+                street: "Main Street 11",
+                postalCode: "12345",
+                city: "Frankfurt",
+            },
+            {
+                street: "Mainzer Straße 123",
+                postalCode: "54321",
+                city: "Frankfurt/Main",
+            },
+        ]
     });
 
     console.log("before save");
