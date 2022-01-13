@@ -29,7 +29,8 @@ async function generateData() {
         author: alex._id,
         text: "lorem ipsum"
     });
+
+    mongoose.connection.close();
 }
 
 generateData();
-mongoose.connection.close();
