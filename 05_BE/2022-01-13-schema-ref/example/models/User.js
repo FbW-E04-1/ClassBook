@@ -38,27 +38,6 @@ const schema = new mongoose.Schema({
     address: { 
         type: addressSchema, 
     },
-
-    // addresses: {
-    //     type: [addressSchema]
-    // }
-
-    // addressHome: {
-    //     type: addressSchema
-    // },
-
-    // addressDeliveries: {
-    //     type: addressSchema
-    // },
-
-    // Pseudo Code:
-    // addressInplace: {
-    //     type: {
-    //         street: 'string',
-    //         postalCode: 'string',
-    //         city: 'string',
-    //     }
-    // }
 },
 {
     // mongoose adds a __v property by default

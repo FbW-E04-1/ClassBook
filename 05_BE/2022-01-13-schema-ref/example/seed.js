@@ -30,7 +30,7 @@ async function generateData() {
         text: "lorem ipsum"
     });
 
-    mongoose.connection.close();
+    mongoose.connection.close(); // fix for: not terminating seed.js-script
 }
 
 generateData();
