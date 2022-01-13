@@ -35,13 +35,13 @@ const schema = new mongoose.Schema({
     },
 
     // addressOffice: addressSchema, // shortcut way to define the type
-    addressOffice: { 
+    address: { 
         type: addressSchema, 
     },
 
-    addresses: {
-        type: [addressSchema]
-    }
+    // addresses: {
+    //     type: [addressSchema]
+    // }
 
     // addressHome: {
     //     type: addressSchema
@@ -82,23 +82,12 @@ const User = mongoose.connection.model("User", schema);
 
 // we can define functions to give our models some functionality
 // there is another way in mongoose to do so: have a look at static methods
-async function create (username, password, age) {
+async function create ({username, password, age, address}) {
     const newUser = new User({
         username,
         password,
         age,
-        addresses: [
-            {
-                street: "Main Street 11",
-                postalCode: "12345",
-                city: "Frankfurt",
-            },
-            {
-                street: "Mainzer Straße 123",
-                postalCode: "54321",
-                city: "Frankfurt/Main",
-            },
-        ]
+        address
     });
 
     console.log("before save");
