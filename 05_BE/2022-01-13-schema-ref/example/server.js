@@ -2,11 +2,12 @@ require("dotenv").config();
 
 const express = require("express");
 const server = express();
+
 server.listen(process.env.PORT, () => console.log(`server listening on port ${process.env.PORT}`));
 
 // we require the ready-to-use database from lib/database.js
 // since mongoose handles the connection, we just need to require mongoose in our models
-const db = require("./lib/database.js");
+require("./lib/database.js");
 
 server.use(express.json());
 

@@ -16,11 +16,12 @@ server.post("/users", async (req, res, next) => {
 
     try {
         // ...and call the create function from it
-        const newUser = await User.create("myUsername", "myPassword", 31);
+        const newUser = await User.create("Hiwa13", "myPassword", 44);
         res.json(newUser);
     } catch (error) {
         res.status(400).json(error);
     }
+    
 })
 
 server.use((error, req, res, next) => {
