@@ -51,5 +51,5 @@ function authenticate(username, password) {
 	}
 }
 
-console.log("updated password:", calculateHash(passwordParam));
+console.log("hash for given password:", calculateHash(passwordParam));
 authenticate(usernameParam, passwordParam);
