@@ -20,7 +20,7 @@ const USERS = {
     password: "$2b$15$y.W.wOpmTk3vTn/8p6XNRuFupJQTIQpClZ7QYc9IrgXiM7jv30BXG", // => 0.1 seconds to compute the hash
   },
   bob: {
-    password: "$2b$15$4W/0qge/fGj5tDnz2HKwx.qSm6irJxaCDCjLhivMMclCs98DST60a", // => 1 second to compute the hash
+    password: "$2b$15$OfWXKlTjZi8kcGwtmZg/H.E2WyjUxAhjdRdorw9UgCMB8lGMsrSZe", // => 1 second to compute the hash
     //password: "$2b$15$xsK7rA35tMIgtecRIg2fVu8oJvCMq1K8Olxpf0oVM1VtRZpjiG2y." // => 3 seconds to compute the hash
   },
 };
