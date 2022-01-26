@@ -3,7 +3,7 @@ const secret = process.env.TOKEN_SECRET
 
 const options = {
   algorithm: "HS256",
-  expiresIn: "15s",
+  expiresIn: "1h",
 };
 
 const signToken = (payload) => {
