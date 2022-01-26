@@ -3,26 +3,14 @@ const bcrypt = require("bcrypt");
 const express = require("express");
 const server = express();
 const CryptoJS = require("crypto-js");
-const mongoose = require("mongoose");
 const User = require("./models/UsersSchema");
 const {signToken} = require("./lib/token")
+
+require('./lib/database.js');
 
 server.use(require('cookie-parser')());
 server.use(express.json()); //translate from json to javaScript
 
-mongoose.connect(
-  process.env.MONGO_URI,
-  
-  { useNewUrlParser: true, useUnifiedTopology: true },
-  (err) => {
-    if (!err) {
-      console.log("connected to database");
-    } else {
-      console.log(`error connected to the database ${err} `);
-    }
-  }
-);
-  
 server.listen(process.env.PORT, () => {
   console.log("connected with port " + process.env.PORT);
 });  
