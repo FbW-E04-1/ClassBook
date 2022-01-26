@@ -1,15 +1,17 @@
 require("dotenv").config();
 const bcrypt = require("bcrypt");
+const makeCookieParser = require('cookie-parser');
 const express = require("express");
 const server = express();
-const CryptoJS = require("crypto-js");
+//const CryptoJS = require("crypto-js");
 const mongoose = require("mongoose");
 const User = require("./models/UsersSchema");
 const {signToken} = require("./lib/token")
-//const authPayload = require("./middleware/authPayload")
+
+server.use(require('./middleware/logger'))
 
 server.use(express.json()); //translate from json to javaScript
-
+server.use(makeCookieParser()); //
 
 
 mongoose.connect(
@@ -28,24 +30,7 @@ mongoose.connect(
   server.listen(process.env.PORT, () => {
     console.log("connected with port " + process.env.PORT);
   });
-  //usernameParam = process.argv[2];
-  //passwordParam = process.argv[3];
-  
-  /* const USERS = {
-    alice: {
-      email: 'alice@gmail.com',
-      password:"1234"
-      //"$2b$12$zol5VgIoPLy.ogxswBKGM.486NcutM67czNoiJHnPDCLsatQqcfH.",
-    },
-    bob: {
-      email: "bob@example.com",
-      password:"2222"
-      //"$2b$12$BVNNzeCsqV.PGWhC7M.7GOMQmfFN2CqNeetERGzXAJ6U0/N/r41iq",
-    },
-  }; */
-  
-  const payload =
-  
+ 
   
   server.post("/signup", function (req, res) {
     let email = req.body.email;
@@ -86,19 +71,11 @@ server.post("/login", async function (req, res) {
   }
 });
 
-// function authenticate(username, password) {
-//   // var passwordHash = calculateHash(username, password);
-//   // console.log(passwordHash);
-//   // return;
 
-//   if (!USERS[username]) {
-//     console.log("not authenticated");
-//     return;
-//   }
-//   if (bcrypt.hashSync(password, USERS[username].password)) {
-//     console.log("authenticated");
-//   } else {
-//     console.log("not authenticated");
-//   }
-// }
-// authenticate(usernameParam, passwordParam);
+
+server.use('./middleware/notFoundHandler.js')
+server.use('/', require('./middleware/errorHandler'))
+
+
+
+
