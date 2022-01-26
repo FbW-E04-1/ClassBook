@@ -1,7 +1,4 @@
-# Base
+# Usage
 
-## Minimal Server
-### Middlewares
-- logger
-- error handler
-- not-found handler
+1. start server
+2. as host use : "127.0.0.1"
