@@ -28,6 +28,7 @@ let password=req.body.password
   res.json(hash)
 
 })
+
 server.post("/auth" ,(req,res)=>{
   let email=req.body.email
   let password=req.body.password

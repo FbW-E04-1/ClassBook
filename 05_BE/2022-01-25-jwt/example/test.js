@@ -6,6 +6,7 @@ const payload = {
     userId: 1,
     name: "Dominik",
     permissions: ["read_orders", "write_products"],
+    validUntil: 'YYYY-MM-DDTHH:MM:SS..'
 };
 
 // when we use our custom token library, we do not need to take care of the default options or the secret
