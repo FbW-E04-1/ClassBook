@@ -4,8 +4,10 @@ const express = require("express");
 const server = express();
 const mongoose = require("mongoose");
 const User = require("./models/UserSchema");
+const { signToken, verifyToken } = require("./lib/token");
+const authParams = require("./middleware/authPayload");
 
-server.use(express.json()); //gives access to the body i.e translate from json  to javascript
+server.use(express.json()); //gives access to the body i.e translate from json  to javascript(middleware to have access tothe body)
 
 mongoose.connect(
   process.env.MONGODB_URI,
@@ -42,19 +44,19 @@ server.post("/signup", (req, res) => {
   }
 });
 
-
-server.post("/login", async function (req, res) {
+server.post("/login", async (req, res) => {
   let email = req.body.email;
   let password = req.body.password;
 
   try {
-    const user = await User.findOne({ email });
+    const user = await User.findOne({ email }); // checking if the email exist
     if (user === null) {
       res.status(401).json("Could not find user");
     } else {
-      const passwordCompare = bcrypt.compareSync(password, user.password);
+      const passwordCompare = bcrypt.compareSync(password, user.password); // using compareSync we hash the password and compare with the user.password that was already hashed during signup
       if (passwordCompare === true) {
-        res.status(200).json("login successful");
+        const cam =  signToken({email:user.email,userId:user._id})
+        res.status(200).json({message: "login successful",token:cam});
       } else {
         res.status(401).json("login failed");
       }
