@@ -14,6 +14,7 @@ const usersSchema = new mongoose.Schema({
 
 
 const User = mongoose.model('users', usersSchema)
+
 //turning the schema into a collection in the database
 
 module.exports = User
