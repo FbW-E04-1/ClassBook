@@ -3,7 +3,7 @@ const secret = process.env.TOKEN_SECRET
 
 const options = {
   algorithm: "HS256",
-  expiresIn: "1h",
+  expiresIn: "3h",
 };
 
 const signToken = (payload) => {
@@ -11,6 +11,12 @@ const signToken = (payload) => {
 }
 
 const verifyToken = (token) => {
+    if (!token) {
+        let error = new Error('token not provided');
+        console.error('error: ', error.message);
+        return {valid: false, error: error};
+    }
+
     return jwt.verify(token, secret, (error, payload) => {
         if (error) return {valid: false, error: error};
         

@@ -1,7 +1,4 @@
-# Base
+# Usage
 
-## Minimal Server
-### Middlewares
-- logger
-- error handler
-- not-found handler
+1. start server
+2. browse to the different endpoints as host use: "localhost"
