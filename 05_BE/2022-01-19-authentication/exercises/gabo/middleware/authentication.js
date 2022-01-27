@@ -3,11 +3,12 @@ const {verifyToken} = require('../lib/token')
 const authentication = (req, res, next) => {
     console.log("req.body: ", req.body);
     
-    const userToken = req.body.token;
+    const userToken = req.cookies.jwt;
     
     const tokenValid = verifyToken(userToken);
     if (tokenValid.valid) {
         console.log(tokenValid.payload)
+        req.userId = tokenValid.payload.userId;
         next()
     }
     
