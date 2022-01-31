@@ -16,6 +16,7 @@ async function seed() {
         name: faker.internet.userName(),
         email: faker.internet.email(),
         password: "adminpassword",
+        role: "Admin",
     });
 
 
@@ -24,6 +25,7 @@ async function seed() {
         name: faker.internet.userName(),
         email: faker.internet.email(),
         password: "photographerpassword",
+        role: "Photographer",
     });
 
 
@@ -32,6 +34,7 @@ async function seed() {
         name: faker.internet.userName(),
         email: faker.internet.email(),
         password: "userpassword",
+        role: "User",
     });
 
     mongoose.connection.close();

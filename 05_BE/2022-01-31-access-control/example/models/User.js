@@ -13,6 +13,12 @@ const schema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    // every user now needs to have a role.
+    role: {
+        type: String,
+        required: true,
+        default: "User",
+    },
 }, {
     version: false,
 });
@@ -26,17 +32,18 @@ schema.pre("save", async function (next) {
 const User = mongoose.model("User", schema);
 
 
-async function register ({ name, email, password }) {
+async function register({ name, email, password, role }) {
     const newUser = new User({
         name,
         email,
         password,
+        role
     });
 
     return await newUser.save();
 }
 
-async function login (email, password) {
+async function login(email, password) {
     const user = await User.findOne({ email });
     if (!user) return null;
 
@@ -46,10 +53,11 @@ async function login (email, password) {
     return {
         userId: user._id,
         name: user.name,
+        role: user.role,
     };
 }
 
-async function removeAll () {
+async function removeAll() {
     return User.deleteMany();
 }
 
