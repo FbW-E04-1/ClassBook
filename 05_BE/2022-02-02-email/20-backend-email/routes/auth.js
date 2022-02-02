@@ -41,12 +41,14 @@ router.get("/verifyEmail/:email/:secret", (req, res) => {
     // compare secret with computed-secret
 
     res.status(200).send(
-        '<!ENCTYPE html>'+
-        '<html><body>'
-        +'<form method="POST" action="/auth/verifyEmailLogin">' // login route, see top route in this file 'POST /'
-        + `<input type="hidden" name="email" value="${req.params.email}">`
-        + 'Password: <input name="password" type="password"></input>'
-        +'</form></body></html>');
+        '<!ENCTYPE html>'
+        + '<html><body>' + "\n"
+        +'<form method="POST" action="/auth/verifyEmailLogin">'  + "\n"// login route, see top route in this file 'POST /'
+        + "\t" + `<input type="hidden" name="email" value="${req.params.email}">` + "\n"
+        + "\t" + 'Password: <input name="password" type="password">' + "\n"
+        + "\t" + '<input type="submit">'
+        +'</form>' + "\n"
+        + '</body></html>');
     //req.params.email + " verified"); // lookup status code
 })
 
