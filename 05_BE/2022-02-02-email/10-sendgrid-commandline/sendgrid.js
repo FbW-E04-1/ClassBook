@@ -5,7 +5,7 @@ require('dotenv').config();
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 const msg = {
-  to: 'marlenwieduwilt@aol.com',
+  to: 'receipient@example.com',
   from: 'thomas.hofmann@digitalcareerinstitute.org', 
   subject: 'Hello',
   text: 'Hi Marlen :-)',
