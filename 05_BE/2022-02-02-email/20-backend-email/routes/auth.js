@@ -54,8 +54,8 @@ router.post("/verifyEmail/:email/:secret", async function (req, res) {
     let secret = req.params.secret;
     let password = req.body.password;
 
-    const payload = token.verify(secret);
-    if (!payload) return res.status(401).send("could not verify email address");
+    const secret = token.verify(secret);
+    if (!secret) return res.status(401).send("could not verify email address");
 
     const user = await User.login(email, password);
     if (!user) return res.status(401).send("wrong credentials");
