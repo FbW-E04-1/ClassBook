@@ -20,7 +20,6 @@ async function seed() {
     });
     
     let user = await User.readByEmail("admin@example.com");
-    
     user.isEmailVerified = true;
     User.update(user._id, user);
 

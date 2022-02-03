@@ -1,6 +1,8 @@
 # Password Reset
 
-Implement a process that allows the user to reset the password.
+Scenario: user forgot password
+
+Implement a process that allows this user to reset the password.
 
 ## Plan the Solution
 Illustrate it with a diagram which includes the following parts:

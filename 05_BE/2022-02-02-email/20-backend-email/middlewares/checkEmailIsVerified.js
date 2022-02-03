@@ -3,8 +3,6 @@ const User = require('../models/User.js');
 const checkEmailIsVerified = async (req, res, next) => {
 	let user = await User.readByEmail(req.body.email);
 
-	console.log("checkEmailIsVerified:", req.body.email);
-	console.log("user: ", user);
 	// early bailout
 	if (!user.isEmailVerified) return res.status(401).end();
 
