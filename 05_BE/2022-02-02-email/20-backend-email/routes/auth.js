@@ -30,31 +30,31 @@ router.post("/signup", async (req, res) => {
 });
 
 router.get("/verifyEmail/:email/:secret", (req, res) => {
-    console.log('email: ', req.params.email);
-    console.log('secret: ', req.params.secret);
-
-    // maybe move to middleware
-    const payload = token.verify(req.params.secret);
-    if (!payload) return res.status(401).end();
-
-    // return form for login with only password field (because the email address is already known)
-    //        the form has a target POST /auth/verifyEmail
-    // compare secret with computed-secret
+    let email = req.params.email;
+    let secret = req.params.secret;
 
     res.status(200).send(
         '<!ENCTYPE html>'
         + '<html><body>' + "\n"
-        +'<form method="POST" action="/auth/verifyEmailLogin">'  + "\n"// login route, see top route in this file 'POST /'
-        + "\t" + `<input type="hidden" name="email" value="${req.params.email}">` + "\n"
+        + "\t" + `<p>Please verify your email address <br><code>${email}</code> <br>by providing your password.</p>` + "\n"
+
+        + `<form method="POST" action="/auth/verifyEmail/${email}/${secret}">`  + "\n"
         + "\t" + 'Password: <input name="password" type="password">' + "\n"
         + "\t" + '<input type="submit">'
-        +'</form>' + "\n"
+        + '</form>' + "\n"
+
         + '</body></html>');
-    //req.params.email + " verified"); // lookup status code
 })
 
-router.post("/verifyEmailLogin", async function (req, res) {
-    const user = await User.login(req.body.email, req.body.password);
+router.post("/verifyEmail/:email/:secret", async function (req, res) {
+    let email = req.params.email;
+    let secret = req.params.secret;
+    let password = req.body.password;
+
+    const payload = token.verify(secret);
+    if (!payload) return res.status(401).send("could not verify email address");
+
+    const user = await User.login(email, password);
     if (!user) return res.status(401).send("wrong credentials");
 
     user.isEmailVerified = true;
