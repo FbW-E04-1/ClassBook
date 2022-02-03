@@ -14,11 +14,15 @@ async function seed() {
     // Admin
     await User.register({
         name: faker.internet.userName(),
-        email: faker.internet.email(),
+        email: "admin@example.com",
         password: "adminpassword",
         role: "Admin",
     });
-
+    
+    let user = await User.readByEmail("admin@example.com");
+    
+    user.isEmailVerified = true;
+    User.update(user._id, user);
 
     // Photographer
     await User.register({
@@ -26,6 +30,7 @@ async function seed() {
         email: faker.internet.email(),
         password: "photographerpassword",
         role: "Photographer",
+        isEmailVerified: true,
     });
 
 

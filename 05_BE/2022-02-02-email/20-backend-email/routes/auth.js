@@ -2,9 +2,10 @@ const router = require('express').Router();
 
 const token = require("../lib/token.js");
 const User = require("../models/User.js");
+const checkEmailIsVerified = require("../middlewares/checkEmailIsVerified.js");
 
-
-router.post("/", async function (req, res) {
+// login
+router.post("/", checkEmailIsVerified, async function (req, res) {
     const user = await User.login(req.body.email, req.body.password);
     if (!user) return res.status(401).send("wrong credentials");
 

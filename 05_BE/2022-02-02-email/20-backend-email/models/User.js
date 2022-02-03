@@ -45,6 +45,10 @@ async function read(id) {
     return id ? await User.findById(id) : await User.find();
 }
 
+async function readByEmail(email) {
+    return await User.findOne({ email });
+}
+
 async function register({ name, email, password, role }) {
     /*
     // 1. send email with verification link
@@ -60,7 +64,7 @@ async function register({ name, email, password, role }) {
         name,
         email,
         password,
-        role
+        role,
     });
 
     const PROTOCOL = process.env.HTTP_PROTOCOL;
@@ -86,7 +90,7 @@ async function register({ name, email, password, role }) {
 }
 
 async function login(email, password) {
-    const user = await User.findOne({ email });
+    const user = await readByEmail(email);
     if (!user) return null;
 
     const passwordCorrect = await bcrypt.compare(password + process.env.PASSWORD_PEPPER, user.password);
@@ -111,6 +115,7 @@ async function update(id, user) {
 
 module.exports = {
     read,
+    readByEmail,
     register,
     login,
     removeAll,
