@@ -54,8 +54,9 @@ async function exists(user) {
     return foundUser? true : false;
 }
 async function register({ name, email, password, role }) {
-    if (User.exists({email})) return null;
-
+    if (await exists({email})) {
+        return null;
+    }
     /*
     1. send email with verification link
     http://localhost:8080/verifyEmail/thomas@example.com
