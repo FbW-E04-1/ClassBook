@@ -49,32 +49,39 @@ async function readByEmail(email) {
     return await User.findOne({ email });
 }
 
+async function exists(user) {
+    let foundUser = await User.findOne(user);
+    return foundUser? true : false;
+}
 async function register({ name, email, password, role }) {
-    /*
-    // 1. send email with verification link
-    // http://localhost:8080/verifyEmail/thomas@example.com
-    // http://localhost:8080/verifyEmail/EMAIL/RANDOM_NUMBER // => we need to store the RANDOM_NUMBER
-    // http://localhost:8080/verifyEmail/EMAIL/sha256(salt+thomas@example.com)
-       => we need some _secret_
-          e.g. 
-          - salted/hash
-    */
+    if (User.exists({email})) return null;
 
+    /*
+    1. send email with verification link
+    http://localhost:8080/verifyEmail/thomas@example.com
+    http://localhost:8080/verifyEmail/EMAIL/RANDOM_NUMBER // => we need to store the RANDOM_NUMBER
+    http://localhost:8080/verifyEmail/EMAIL/sha256(salt+thomas@example.com)
+    => we need some _secret_
+       e.g. 
+       - salted/hash
+    
+    SOLUTION: we chose a JWT token as secret. 
+              That additionally provides a lifespan for the link -
+              later the link will not work anymore.
+    */
     const newUser = new User({
         name,
         email,
         password,
         role,
     });
-
+    
     const PROTOCOL = process.env.HTTP_PROTOCOL;
     const HOST = process.env.HOST;
     const PORT = process.env.PORT;
     
     let payload = process.env.SENDGRID_SECRET_GENERATION_PEPPER + email;
     let secret = token.signVerificationEmail(payload);
-    
-    //let secret = CryptoJS.SHA256(process.env.SENDGRID_SECRET_GENERATION_PEPPER + email)
     
     VERIFICATION_LINK = `${PROTOCOL}://${HOST}:${PORT}/auth/verifyEmail/${email}/${secret}`;
 
@@ -114,6 +121,7 @@ async function update(id, user) {
 }
 
 module.exports = {
+    exists,
     read,
     readByEmail,
     register,

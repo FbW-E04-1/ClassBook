@@ -26,6 +26,9 @@ router.post("/signup", async (req, res) => {
         role: "Photographer",
     });
 
+    if (!newUser) return res.status(409).send("could not create user");
+    //                              409 := Conflict (user with given email already exists)
+
     res.status(201).send(newUser._id);
 });
 
