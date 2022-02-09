@@ -72,6 +72,8 @@
 
 ## Tasks
 - identify most promising ideas
+- elaborate those project ideas
+- build groups around these project ideas
 
 ### Description
 - who are the users?
