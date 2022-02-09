@@ -1,0 +1,17 @@
+.AnotherPage {
+  text-align: center;
+}
+
+.AnotherPage-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.AnotherPage-main {
+  max-width: 600px;
+  margin: 20px auto;
+}
