@@ -85,5 +85,6 @@
 - mindmap (freeplane)
 - spread sheet
 - text editor
+- pen and paper
 
 - describe an MVP ([minimum viable product](https://en.wikipedia.org/wiki/Minimum_viable_product))
