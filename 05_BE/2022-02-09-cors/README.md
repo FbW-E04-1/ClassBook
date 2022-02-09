@@ -17,6 +17,9 @@
 
 ### Time Frame
 
+- MVP - Minimal Viable Product
+- Bus Factor
+
 - 7 weeks (2022-02-14 - 2022-03-31), e. g. 
 	- 5 weeks development
 	  - 1 week group/setup/tools/plan/research/tech/arch/
