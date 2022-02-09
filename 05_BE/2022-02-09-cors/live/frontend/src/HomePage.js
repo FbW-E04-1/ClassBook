@@ -7,9 +7,12 @@ import './HomePage.css';
 
 // change the default of axios so that cookies are sent with each request
 
+// thanks to David:
+// https://stackoverflow.com/questions/42182577/is-it-possible-to-use-dotenv-in-a-react-project
+// React makes variables defined in an `.env`-file available if they start with `REACT_APP_`:
 
 axios.defaults.withCredentials = true; // => send cookies along requests
-axios.defaults.baseURL = 'http://localhost:3456'; 
+axios.defaults.baseURL = process.env.REACT_APP_SERVER_BACKEND; 
 
 function HomePage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
