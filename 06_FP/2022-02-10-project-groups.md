@@ -51,7 +51,7 @@
 ---
 
 ### Undecided 
- Three project ideas available
+ Three project ideas available:
   - music e-commerce
   - crypto-currency-tracker
   - travel agency
