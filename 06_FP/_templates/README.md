@@ -13,7 +13,6 @@ DESCRIPTION (one paragraph)
 <!-- adapt to your needs -->
 - agile with Kanban-board
 - daily standups
-- 
 
 ## Contact Information
 <!-- if applicable -->
