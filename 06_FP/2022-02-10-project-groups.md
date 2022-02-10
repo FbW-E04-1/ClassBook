@@ -9,9 +9,11 @@
   - [Kanban](https://en.wikipedia.org/wiki/Kanban_(development))
     - [Trello](https://trello.com/)
 
+---
+
 ## Project Groups
 
-- "Event-Manager"
+### "Event-Manager"
   
   Gabriel, Jerreh, Muhanad, Omar
 
@@ -22,7 +24,9 @@
   - event organizers
   - consumers
 
-- "Communication-Platform between Developer and Clients/Customers"
+---
+
+### "Communication-Platform between Developer and Clients/Customers"
 
   David, Gabo, Marlen, Patryk, Priscilla
 
@@ -33,7 +37,9 @@
 	- trouble ticket system
   - search and filter 
 
-- "Air Quality" 
+---
+
+### "Air Quality" 
   
   Araz, Hiwa, Stephane
 
@@ -42,10 +48,14 @@
   Users can register
   Mockup for illustration planned
 
-- Undecided between three projects:
+---
+
+### Undecided 
+ Three project ideas available
   - music e-commerce
   - crypto-currency-tracker
   - travel agency
 
   Arta, Emad, Jelena, Mohammad, Mathias
-  
+
+---
