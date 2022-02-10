@@ -15,5 +15,8 @@ DESCRIPTION (one paragraph)
 - daily standups
 - 
 
+## Contact Information
+<!-- if applicable -->
+
 ## Links
-- git-repository
+ <!-- to used tools Kanban/Trello -->
