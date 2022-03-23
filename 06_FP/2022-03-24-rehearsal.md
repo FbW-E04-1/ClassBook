@@ -3,8 +3,6 @@
 ## "EVENTLIT" (Event-Manager)
   Gabriel, Jerreh, Muhanad (lead)
 
-  drop out: Omar
-
 ## "Nomad Studio" (Communication-Platform between Freelancer and Customers)
   David, Patryk, Gabo, Marlen, Priscilla
 
