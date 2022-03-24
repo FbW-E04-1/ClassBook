@@ -31,6 +31,7 @@ In November **Dominik Brüchler & Thomas Hofmann** took over the teacher positio
 Then in December as assistant teacher joined **Tareq Almasri**.
 
 We have been together for the **Backend Module** and the **Final Project**.
+
 The project started **7 weeks** ago:
 - with one week of ideation and planning.
 - 4 weeks implementation
