@@ -6,6 +6,7 @@ The event will take place on Zoom where we will meet via Zoom:
 - https://us02web.zoom.us/j/5883647320?pwd=bGFTMWxrYzM4bUdlZzlSbDNKTHFjdz09Agenda:
 
 2:45 h - Technical setup
+         Fullname in Zoom's Participant List
 
 3:00 h - Short introduction from the DCI
 
