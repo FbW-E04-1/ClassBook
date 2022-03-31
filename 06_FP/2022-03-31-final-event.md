@@ -3,7 +3,7 @@
 ## Schedule
 
 The event will take place on Zoom where we will meet via Zoom:
-- https://us02web.zoom.us/j/5883647320?pwd=bGFTMWxrYzM4bUdlZzlSbDNKTHFjdz09Agenda:
+- https://us02web.zoom.us/j/5883647320?pwd=bGFTMWxrYzM4bUdlZzlSbDNKTHFjdz09
 
 2:45 h - Technical setup
          Fullname in Zoom's Participant List
@@ -27,6 +27,8 @@ The event will take place on Zoom where we will meet via Zoom:
 ## Moderation Notes
 
 The whole year **Bianca Dost** was the Class Manager.
+
+Annika Kolter (Career Success) for Organization.
 
 In November **Dominik Brüchler & Thomas Hofmann** took over the teacher positions.
 Then in December as assistant teacher joined **Tareq Almasri**.
