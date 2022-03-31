@@ -41,17 +41,17 @@ The project started **7 weeks** ago:
 - and roughly 2 weeks for preparing and rehearsing the presentation
 
 ## "JEMMA" (Outdoor Travel Agency)
-Mohammad
+Jelena
 
 Group: Arta, Emad, Jelena, Mohammad, Mathias
 
 ## "EVENTLIT" (Event-Manager)
-Gabriel
+Gabriele
 
-Gabriel, Jerreh, Muhanad (lead)
+Gabriele, Jerreh, Muhanad (lead)
+
+## "Air Quality" (Hiwa; regional information on air quality)
+  Hiwa, Araz
 
 ## "Nomad Studio" (David; Communication between Freelancers and Customers)
   David, Patryk, Gabo, Marlen, Priscilla
-
-## "Air Quality" (Hiwa; regional information on air quality)
-  Araz, Hiwa
