@@ -32,6 +32,7 @@ Add your name, GitHub username with link, and role in the table below
 |Mathias Albrecht|[]()|student|
 |Jerreh Njai|[Njie-collab]( https://github.com/Njie-collab)|student|
 |Gabriel Fernandez Mendoza|[Gabo984](https://github.com/Gabo984)|student|
+|Araz Saydu [arasaa](https://github.com/arasaa)|student|
 
 ## Course overview
 
