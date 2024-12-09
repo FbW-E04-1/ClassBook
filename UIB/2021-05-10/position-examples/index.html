@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      .container {
+        border: 3px solid #333;
+        margin-bottom: 5rem;
+      }
+      .box {
+        background: tomato;
+        border: 3px solid rgb(35, 109, 143);
+        height: 150px;
+        padding: 1rem;
+        width: 150px;
+      }
+
+      .relative {
+        background: dark;
+        position: relative;
+      }
+      .relative-1 {
+        left: 150px;
+        top: 50px;
+      }
+      .relative-2 {
+        left: 150px;
+        top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Position</h1>
+
+    <h2>Relative</h2>
+    <p>
+      The box with position <code>relative</code> is moved accordint to the left
+      and top property. Those properties will move the box by an offset
+      calculated in relation to their original position. This offset won't
+      affect the position of other elements, as seen in the example 2.
+    </p>
+    <div class="container">
+      Example 1
+      <div class="box relative relative-1">
+        relative<br />left: 150px<br />top: 50px
+      </div>
+    </div>
+    <div class="container">
+      Example 2
+      <div class="box relative relative-2">
+        relative<br />left: 150px<br />top: 50px
+      </div>
+      <div class="box static">Static</div>
+    </div>
+  </body>
+</html>

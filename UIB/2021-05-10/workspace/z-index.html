@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        border: 3px solid black;
+      }
+
+      .float {
+        float: left;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+      }
+
+      .box-1 {
+        background-color: turquoise;
+      }
+      .box-2 {
+        background-color: orange;
+      }
+
+      .relative {
+        position: relative;
+      }
+      .container-2 {
+        position: relative;
+        height: 100px;
+      }
+      .absolute {
+          position: absolute;
+      }
+      .container-2 .box-1 {
+          left: 0;
+          top: 0;
+      }
+      .container-2 .box-2 {
+          left: 50px;
+          top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1 float"></div>
+      <div class="box box-2"></div>
+    </div>
+    <div class="container container-2">
+      <div class="box box-2 absolute"></div>
+      <div class="box box-1 absolute"></div>
+    </div>
+  </body>
+</html>
